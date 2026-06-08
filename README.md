@@ -35,6 +35,9 @@
 | 8 | Google Early Careers Session Notes | txt | data/raw/source_08.txt |
 | 9 | Squarespace Acing Technical Recruitment Info Session | txt | data/raw/source_09.txt |
 | 10 | How to Ace the First 30 Days of Your New Job | article | https://rewritingthecode.org/resources/member-resources/how-to-ace-the-first-30-days/ |
+| 11 | Underclassmen Opportunities | github_repo | https://github.com/Jose-Gael-Cruz-Lopez/underclassmen-opportunities/tree/main?tab=readme-ov-file |
+| 12 | Google's AI-Assisted Coding Interview (2026 Guide) | article | https://www.tryexponent.com/blog/google-ai-coding-interview |
+| 13 | Using AI in Meta's AI-assisted coding interview (with real prompts and examples) | article | https://interviewing.io/blog/how-to-use-ai-in-meta-s-ai-assisted-coding-interview-with-real-prompts-and-examples |
 
 ---
 

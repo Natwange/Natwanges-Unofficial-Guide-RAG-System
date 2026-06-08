@@ -20,16 +20,19 @@ I chose the International Student Career Survival Guide as my domain because int
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | How I Survived the Toughest Job Market as an International Student | International student internship search experience, application volume, recruiting challenges, sponsorship concerns | https://www.reddit.com/r/internships/comments/1jpcszv/how_i_survived_the_toughest_job_market_as_an/ |
+| 2 | Advice for International Students in the US | Career advice, networking, recruiting mistakes, internship strategy, long-term planning | https://www.wallstreetoasis.com/forum/investment-banking/advice-for-international-students-in-the-us-f-1-visa-opt-cpt-h-1b |
+| 3 | I'm an international student at UNC. Here's how I got an AI summer internship. | Personal success story, networking, projects, internship search strategy | https://www.businessinsider.com/unc-student-landed-internship-after-changing-major-2026-4 |
+| 4 | Want to land a tech internship? A Google engineer explains how networking 'intentionally' can help | Projects, networking, interview preparation, internship recruiting | https://www.businessinsider.com/google-engineer-advice-internship-tech-job-offer-2025-6 |
+| 5 | No Internship? No Problem | Advice for leveling-up your resume if you didn't land a summer internship | data/raw/source_05.txt |
+| 6 | How to Add Projects to Your Resume (And Actually Get Credit for Them) | How to add projects to your resume | https://rewritingthecode.org/resources/member-resources/how-to-add-projects-to-your-resume/ |
+| 7 | Building Confidence: Empower Yourself as a Woman in Tech | Building confidence in your career | https://rewritingthecode.org/resources/member-resources/building-confidence-empower-yourself-as-a-woman-in-tech/ |
+| 8 | Google Early Careers Session Notes | Tips from a Google recruiter and Nooglers | data/raw/source_08.txt |
+| 9 | Squarespace Acing Technical Recruitment Info Session | Tips from a Squarespace recruiter and two SWE recent grads | data/raw/source_09.txt |
+| 10 | How to Ace the First 30 Days of Your New Job | Thriving in your new job during the first 30 days | https://rewritingthecode.org/resources/member-resources/how-to-ace-the-first-30-days/ |
+| 11 | Underclassmen Opportunities | A resource for finding underclassmen career opportunities | https://github.com/Jose-Gael-Cruz-Lopez/underclassmen-opportunities/tree/main?tab=readme-ov-file |
+| 12 | Google's AI-Assisted Coding Interview (2026 Guide) | A guide on Google's AI-assisted coding interview | https://www.tryexponent.com/blog/google-ai-coding-interview |
+| 13 | Using AI in Meta's AI-assisted coding interview (with real prompts and examples) | A guide on Meta's AI-assisted coding interview | https://interviewing.io/blog/how-to-use-ai-in-meta-s-ai-assisted-coding-interview-with-real-prompts-and-examples |
 
 ---
 

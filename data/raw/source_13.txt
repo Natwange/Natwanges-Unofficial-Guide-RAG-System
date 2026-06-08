@@ -1,0 +1,326 @@
+Using AI in Meta’s AI-assisted coding interview (with real prompts and examples)
+By Githire B. Wahome | Published: January 20, 2026; Last updated: April 20, 2026
+Githire B. Wahome
+Githire (Brian) Wahome is a backend and machine learning engineer with almost a decade of experience across startups and large technology companies. He’s worked at Meta, Microsoft, and Qualtrics. At Meta, his work focused on ML platforms, LLM modeling and inference for code completion and generation, and benchmarking systems. He’s also worked at smaller startups around the world, including mobile money platforms in Kenya and embedded systems in Korea. Brian has conducted over 1,000 interviews, both mock and real, with a strong focus on machine learning, backend, and infrastructure engineering. He also has a background as a STEM educator and regularly writes technical articles.
+
+In October 2025, Meta began piloting an AI-enabled coding interview that replaces one of the two coding rounds at the onsite stage. It’s 60 minutes in a specialized CoderPad environment with an AI assistant built in. It’s highly likely that this round will be rolled out for all back-end and ops-focused roles in 2026.
+
+While Meta’s official prep materials will tell you that AI usage during this interview is optional and will have no bearing on the outcome, in practice, that’s not entirely true, and we believe that using AI properly will give you an edge because of the associated productivity boost. To wit, this post is a practical walkthrough of how AI fits into these interviews, using concrete examples of prompts, code, and AI outputs, and showing how to integrate them without sacrificing judgment.
+
+If you’d like to know more about Meta’s process end-to-end, check out our comprehensive guide to Meta’s interview process and questions.
+
+Quick facts
+Interview length: 60 minutes
+Where it fits in: This round replaces one of the coding interviews in the onsite
+Who gets it: Likely rolled out to all SWE roles in 2026
+Platform: CoderPad with an integrated AI assistant
+AI Models available: GPT-4o mini, GPT-5, Claude Sonnet 4/4.5, Claude Haiku 3.5/4.5, Gemini 2.5 Pro, Llama 4 Maverick
+Key difference (outside of AI use): Multi-file project that you have to iterate on instead of two algorithmic problems (but you'll still be using your data structures and algorithms knowledge)
+
+Practical applications of AI during an interview
+AI coding assistants in this round are best used as a productivity booster for well-defined subtasks, NOT as an end-to-end solver. Here are some concrete ways a candidate can deploy AI in a back-end interview.
+
+Shell commands and scripting
+Shell commands and scripting are common in backend/ops roles and are a perfect example of a well-defined subtask well suited to AI. During an interview, you might be asked to automate a deployment step, parse logs, or set up an environment. Rather than spending precious minutes recalling exact flag syntax or Bash idioms, you can delegate that to the AI.
+
+For instance, you can quickly ask the AI to generate one-liners or scripts for environment tasks… something like: How can I grep recursively for lines containing ERROR in all .log files?
+
+The AI can produce a correct grep command or a short Bash script, saving you time on syntax. Similarly, it can help draft deployment or launch scripts (e.g., a Docker command or a startup script) based on your description.
+
+Example
+Scenario	Suppose that during the interview you need to quickly find all ERROR entries in log files. Instead of typing out the command from memory, you can prompt the AI.
+Prompt	Write a bash command to recursively search for lines containing ERROR in all .log files in the current directory and subdirectories.
+AI response	grep -r "ERROR" --include="*.log" .
+Tell the interviewer	“I've used AI to generate the grep command. The -r flag searches recursively, --include filters to .log files only, and the dot specifies the current directory. This saves time on syntax lookup.”
+Use cases and best practices
+Here are a few other scripting tasks and situations that you can use AI for, as well as example prompts.
+
+Environment setup scripts: Generate a Bash script to install Python 3.9, create a virtual environment, and install requirements from requirements.txt
+Docker commands: Write a Docker run command to start a container from image myapp, mapping port 8080 to host port 80, with environment variable DB_HOST=localhost
+Log parsing: Create an awk script to extract timestamps and error messages from this log format: [YYYY-MM-DD HH:MM] LEVEL: message
+And here are some best practices:
+
+After the AI provides the script or command, always review it to ensure correctness (check paths, permissions, edge cases) and explain your reasoning to the interviewer.
+Check for completeness: If the AI-generated Docker command is missing a volume mount you need, catch that in review and add it.
+Communicate your additions: "The AI gave me a solid starting point, but I've added a volume mount for persistent data."
+Demonstrate ownership: This shows you're using AI as a productivity tool while maintaining full ownership of the solution.
+Code comprehension and navigation
+AI can summarize what unfamiliar code does or find references quickly, which is especially helpful when you're dropped into an existing codebase. If given a codebase or legacy function, use AI to summarize what code does or find references. For instance, you can paste a function and ask, “Explain what this function does and how it might be used.” The AI’s summary can accelerate your understanding, helping you locate where to modify or integrate new code. Some tools even have an “Explain this code” feature for this purpose.
+
+Examples
+Code review and bug detection
+
+Scenario	Suppose you're given a legacy Python function that processes user data, but you're not immediately sure what transformations it applies. You can paste the function into the AI and prompt it.
+Prompt	Explain what this function does step-by-step and identify any potential edge cases or bugs.
+AI response	This function takes a list of user dictionaries, filters out users without an email field, normalizes email addresses to lowercase, and returns a sorted list by username.
+
+Potential issues: it assumes email and username keys exist; missing keys will raise KeyError.
+Edge case: empty input list returns empty list correctly.
+Tell the interviewer	“I used AI to quickly understand this legacy code. It confirmed my suspicion that the function filters and normalizes emails. I see it doesn't handle missing keys gracefully, so I'll add error handling for that.”
+Code triage for a simple shopping app
+
+Scenario	Suppose you need to filter a list of shopping cart items in a web application. You are given a list of dictionaries, and the task is to ensure all prices are converted to floats and filter out items with a price of zero or less, or missing the price key.
+Prompt	Explain what this function does step-by-step and identify any potential edge cases or bugs.
+
+def process_orders(orders, min_amount=100):
+    result = []
+    for order in orders:
+        if order['total'] >= min_amount:
+            order['processed'] = True
+            result.append(order)
+    return sorted(result, key=lambda x: x['date'])
+AI response	This function filters orders by a minimum total amount (default 100), marks them as processed, and returns them sorted by date.
+
+Bug: assumes total and date keys exist – will raise KeyError if missing.
+Edge case: empty orders list works fine.
+Tell the interviewer	“I asked AI to review this order processing function and it caught a critical bug — the code assumes all orders have total and date keys, which could crash in production. I then used AI to help me refactor the code to use .get() methods with sensible defaults and added validation. I also added logging for orders that don't meet the criteria so we can track data quality issues upstream.”
+Triage and debugging a config file / deployment script
+
+Scenario	You're given a shell script that handles application deployment by invoking Docker Compose. You need to understand its workflow and identify potential failure points before suggesting improvements to the build process, caching, and reliability.
+Prompt	I have this shell script that deploys an application. Walk me through what each section does and identify any potential failure points.
+
+#!/bin/bash
+set -e
+cd /opt/myapp
+git pull origin main
+docker-compose down
+docker-compose up -d --build
+echo "Deployment complete"
+AI response	The script navigates to the application directory, pulls the latest code from the main branch, stops existing containers, then rebuilds and starts them in detached mode.
+
+Failure points:
+set -e causes the script to exit on any command failure
+git pull can fail if merge conflicts exist
+docker-compose assumes Docker is running and a valid compose file exists
+Tell the interviewer	“I used AI to analyze our deployment script and it highlighted several reliability issues. Based on its feedback, I added pre-flight checks to verify Docker is running, implemented a backup mechanism before pulling new code, and added rollback logic in case the new containers fail to start. I also added health checks after deployment to verify the application is responding correctly before declaring success.”
+Use cases and best practices
+In backend/ops interviews, you might encounter existing codebases, configuration files, or deployment scripts that you need to understand quickly. Rather than spending 10+ minutes manually tracing through unfamiliar code, you can:
+
+Summarize complex functions: Summarize what this 50-line database migration function does and highlight any risky operations
+Identify dependencies: List all external libraries and system calls this script uses, and explain their purpose
+Find integration points: Where in this codebase would I add a new API endpoint for user authentication?
+Understand configuration: Explain each section of this YAML configuration file and what happens if I change the 'replicas' value. After receiving the AI's explanation, verify its accuracy by spot-checking key claims:
+Cross-reference with the actual code: If the AI says "line 23 handles error logging," confirm that line 23 actually does that.
+Test your understanding: Explain back to the interviewer in your own words what you learned, showing you've internalized it rather than just parroting the AI.
+Ask your interviewer clarifying questions: If the AI's explanation reveals ambiguity, ask the interviewer: "The AI suggests this function might throw an exception on null input. Is that the intended behavior?"
+Boilerplate generation
+You can also use AI to offload generating boilerplate or repetitive coding tasks. Boilerplate generation is especially valuable in backend/ops interviews where you need to quickly scaffold APIs, data models, or configuration files. Instead of spending 10-15 minutes writing repetitive structure, you can focus on the business logic and system design.
+
+Examples
+Rest API endpoint
+
+Scenario	Suppose during the interview you need to create a REST API endpoint for user registration. Instead of manually typing out all the boilerplate (imports, class definition, validation, etc.), you can prompt the AI.
+Prompt	Generate a Python Flask REST API endpoint for user registration that accepts username, email, and password as JSON input, validates the fields, and returns appropriate success/error responses.
+AI response	
+from flask import Flask, request, jsonify
+import re
+
+
+app = Flask(name)
+
+
+
+
+@app.route('/api/register', methods=['POST'])
+def register_user():
+data = request.get_json()
+
+
+
+# Validate required fields
+if not data or not all(k in data for k in ['username', 'email', 'password']):
+    return jsonify({'error': 'Missing required fields'}), 400
+
+username = data['username']
+email = data['email']
+password = data['password']
+
+# Basic validation
+if len(username) &lt; 8:
+    return jsonify({'error': 'Username must be at least 3 characters'}), 400
+
+if not re.match(r'^[\w\.-]+@[\w\.-]+\.\w+$', email):
+    return jsonify({'error': 'Invalid email format'}), 400
+
+if len(password) &lt; 8:
+    return jsonify({'error': 'Password must be at least 8 characters'}), 400
+
+# TODO: Add user to database
+
+return jsonify({'message': 'User registered successfully', 'username': username}), 201
+
+
+if name == 'main':
+app.run(debug=True)
+
+Tell the interviewer	“I've used AI to generate the Flask endpoint boilerplate. It includes basic validation for username length, email format, and password strength. I notice it doesn't include database integration yet, which I'll add next. I also want to add password hashing before storage for security.”
+Pydantic model
+
+Scenario	You're building a task management API and need a data model to represent tasks. The model must include validation for task properties, enums for status and priority, and handle optional fields properly.
+Prompt	Generate a Python Pydantic model for a Task with fields: task_id (UUID), title (string, max 200 chars), description (optional string), status (enum: pending, in_progress, completed), priority (enum: low, medium, high), assigned_to (optional user ID), due_date (optional datetime). Include validation for required fields.
+AI response	
+from pydantic import BaseModel, Field, validator
+from typing import Optional
+from uuid import UUID
+from datetime import datetime
+from enum import Enum
+
+
+class TaskStatus(str, Enum):
+PENDING = "pending"
+IN_PROGRESS = "in_progress"
+COMPLETED = "completed"
+
+
+
+
+class Priority(str, Enum):
+LOW = "low"
+MEDIUM = "medium"
+HIGH = "high"
+
+
+
+
+class Task(BaseModel):
+task_id: UUID
+title: str = Field(..., max_length=200)
+description: Optional[str] = None
+status: TaskStatus = TaskStatus.PENDING
+priority: Priority = Priority.MEDIUM
+assigned_to: Optional[int] = None
+due_date: Optional[datetime] = None
+
+
+
+@validator('title')
+def title_not_empty(cls, v):
+    if not v.strip():
+        raise ValueError('Title cannot be empty')
+    return v</code></pre>
+</td>
+
+
+  
+Tell the interviewer	“I used AI to generate the Pydantic model for type validation. The model includes enums for status and priority, optional fields for description and assignment, and a custom validator to ensure titles aren't empty strings. I notice it set sensible defaults (PENDING status, MEDIUM priority) which aligns with typical task management patterns. I'd add additional validators for due_date to ensure it's in the future if we want to prevent backdated tasks.”
+Kubernetes deployment
+
+Scenario	You need to quickly create a Kubernetes deployment configuration for a payment microservice with specific requirements including replicas, resource limits, secrets, and health checks.
+Prompt	Create a Kubernetes deployment YAML for a microservice named payment-service with 3 replicas, using image myapp/payment:v1.0, exposing port 8080, with environment variables for DATABASE_URL and API_KEY from a secret, resource limits of 500Mi memory and 500m CPU, and a readiness probe on /health.
+AI response	
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-service
+  labels:
+    app: payment-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: payment-service
+  template:
+    metadata:
+      labels:
+        app: payment-service
+    spec:
+      containers:
+        - name: payment-service
+          image: myapp/payment:v1.0
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: payment-secrets
+                  key: database-url
+            - name: API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: payment-secrets
+                  key: api-key
+          resources:
+            limits:
+              memory: "500Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 5
+Tell the interviewer	“I used AI to generate the Kubernetes deployment YAML with the requested configuration. I notice it also added resource requests (which the AI inferred as good practice), and the readiness probe has sensible defaults. I'll verify the secret name matches our existing secrets and adjust the resource limits if needed based on our actual service requirements.”
+Use cases and best practices
+Here are some common use cases for generating boilerplate:
+
+REST API endpoints: Create a FastAPI endpoint that accepts a POST request with product_id and quantity, validates inventory, and returns stock status.
+Data model classes: Generate a Python dataclass for an Order with fields: order_id (UUID), customer_id (int), items (list of OrderItem), total_amount (Decimal), created_at (datetime), with validation for positive amounts.
+Configuration files: Create a docker-compose.yml file for a web application with services: postgres database, redis cache, and a Python Flask app. Include environment variables for database connection and volume mounts for persistence.
+Database schemas: Write a SQL CREATE TABLE statement for a users table with columns: id (primary key, auto-increment), username (unique, not null), email (unique, not null), password_hash (not null), created_at (timestamp, default now), last_login (timestamp, nullable)
+And here are some best practices for what to do after you get the boilerplate. Always customize and enhance it based on the specific requirements:
+
+Add missing business logic: The AI provides structure, but you fill in the domain-specific implementation.
+Improve error handling: AI-generated code often has basic error handling. Enhance it with specific exception types and meaningful error messages.
+Add security considerations: For example, if the AI generates a password field, add hashing. If it creates an API endpoint, add authentication/authorization.
+Optimize for the use case: If the boilerplate includes features you don't need, remove them to keep code clean and focused.
+Other uses
+Debugging assistance
+Use AI as a pair-programming partner when debugging. If you encounter an error or unexpected behavior, you can describe the issue or even share an error message with the AI to get troubleshooting suggestions. AI tools excel at spotting common mistakes or suggesting likely fixes.
+
+For example, you can prompt with: I have a function that’s returning None unexpectedly. What potential causes should I check?
+
+The AI might list typical pitfalls, guiding your investigation.
+
+Test case generation
+Rapidly generate test cases or examples with AI. After writing a function, ask the AI to: Provide a set of unit test cases, including edge cases.
+
+This approach can help you ensure comprehensive coverage. AI can produce a list of inputs/outputs covering normal and edge scenarios. Always review and possibly run these tests to verify they align with the problem requirements.
+
+Solution optimization
+Once you have a solution, you can query the AI for possible improvements. For instance: Can this function be optimized or made more Pythonic?
+
+The AI assistant might suggest refactoring loops into list comprehensions, using built-in functions, or other best practices. Treat these as suggestions – you remain the final decision-maker on whether to apply them.
+
+TL;DR: Best practices for effective AI-assisted coding
+Using AI in an interview requires discipline and good judgment. Here are key best practices and “rules” to follow for safe and effective AI usage:
+
+Fully understand the problem first. Don’t rush to prompt the AI before you grasp the requirements. Take a few minutes to clarify the problem, explore any starter code, and outline your approach. Skipping this step can lead the AI (and you) down the wrong path, since the model only works with the context you give it. As experts note, clear framing upfront is your best defense against AI confidently generating the wrong solution
+Use AI for subtasks, not the entire design. Break the solution into parts and decide which pieces to delegate. Keep ownership of complex decisions (e.g., choosing algorithms, data structures, handling edge cases) and let AI handle well-defined subtasks like boilerplate code or simple helper functions. The skill isn’t in letting AI take over; it’s in knowing what to offload and when. This ensures you retain control of the overall solution and understand it deeply.
+Provide clear, contextual prompts. When you do ask the AI for help, be specific and give context. Treat it like a junior developer: you need to clearly explain the task. For example, “Generate a SQL query to get the top 5 users by signup date from this users table (columns: id, name, signup_date)” is better than “Write a SQL query about users.” Clear, structured instructions produce more relevant answers. If the AI’s output is off-base, it often means the prompt was too vague, refine your instructions, and try again.
+Iterate in small, controlled steps. Avoid letting the AI modify large swaths of the project in one go. Focus on single-file or even single-function edits before moving on. This “small commits” approach helps isolate issues and keeps you in control. Studies have found that fully automatic fixes can overreach – scanning an entire codebase and even altering unrelated files – whereas human-guided, focused changes yield more accurate results. In practice, highlight or work on one section at a time and validate that it works before proceeding.
+Review all AI outputs critically. Never accept AI suggestions on face value. Treat AI-generated code as if it was written by a co-worker. Review every line. Check for logical correctness, edge-case handling, adherence to coding standards, and any potential security issues. Successful candidates always critically reviewed and improved AI-generated code, rather than just copy-pasting it. This is crucial because a significant portion of AI-generated code can contain bugs or even vulnerabilities if not scrutinized. By inspecting and testing the AI’s code, you demonstrate ownership and insight.
+Test thoroughly, and verify behavior. Validate that the AI-assisted solution actually works for all cases. Don’t just settle for the first example that passes. Write and run multiple test cases, including edge conditions, to catch errors the AI may have missed. Strong candidates often even use AI to help generate additional test cases, then manually verify those tests are correct. This discipline proves to the interviewer that you won’t let subtle bugs slip by. If a bug is found, take the time to diagnose why it happened. Was the prompt unclear, or did the AI make an incorrect assumption? Use that insight to guide the next fix.
+Take ownership of the solution: Remember that you (not the AI) are the interviewee. Ensure the final code reflects solid engineering practices and your understanding. If the AI produces convoluted or overly clever code, don’t hesitate to simplify it for readability and maintainability. You should be ready to explain every part of the solution. Interviewers expect you to take full ownership of any code you produce, whether written by you or with AI assistance. This means aligning the code with production-quality standards (appropriate error handling, clear naming, etc.) as if it were your own.
+Communicate and justify your use of AI: Throughout the interview, keep a clear commentary of what you’re doing and why, especially when involving the AI. Explain your thought process before and after using the AI. For example, you might say to your interviewer, “I’ll use ChatGPT to suggest an approach for parsing this file format,” and then, after receiving output: “The AI suggests using regex, but I see it didn’t cover all cases, so I’ll tweak that part.” This habit not only keeps the interviewer in the loop, it also shows you’re using AI collaboratively (as a “teammate”) and applying your judgment at each step. Strong communication is even more vital in AI-assisted interviews because the AI will do exactly (and only) what you ask. If your instructions are vague or your reasoning is shaky, the AI’s contribution can magnify that confusion.
+Don’t over-rely on AI, and make sure you maintain your skills: While AI can accelerate tasks, avoid leaning on it for everything. Do not let the AI completely overshadow your own coding ability. Interviewers are watching to ensure you’re not using the tool as a crutch. For example, if a solution requires a simple loop or a basic API call, you can write it faster by hand than by prompting the AI. Use your judgment on when AI will save time versus when it might actually slow you down with back-and-forth. Remember, you need to demonstrate your problem-solving skills. Use AI to augment, not replace, your expertise. If you find yourself blindly following AI suggestions without understanding them, step back – it’s better to solve a portion of the problem manually than to present a solution you can’t explain.
+Manage time and AI usage wisely: In an interview, time management is crucial. Plan how you’ll incorporate AI. For instance, spend the first minutes planning (without AI). Then use the AI for specific coding tasks, and reserve the final minutes for testing and review. Don’t get caught up trying to get “perfect” answers from the AI for minor details. If a quick manual fix or assumption can move you forward, do that instead of tuning prompts endlessly. Studies suggest that AI tools can speed up development by ~50%, but only if used strategically. YOU must decide when it’s faster to code something yourself vs. when to delegate to AI. Maintain a clear phase structure (planning, implementing, verifying) and use AI in those phases appropriately (e.g., AI to generate a plan outline or test cases, but your own skills to implement core logic). This balance shows that you can integrate AI into a real-world development workflow efficiently.
+Tools and resources for getting better at using AI
+To get comfortable with AI tools ahead of the interview, take advantage of the following resources and practice opportunities:
+
+AI coding assistants: Get familiar with the specific tools you might use. If your interview environment integrates ChatGPT, practice using ChatGPT (ideally GPT-5) for coding, e.g., in a ChatGPT session, try solving a coding challenge with its help. If you have access to Claude (Anthropic’s AI with a large context window), experiment by feeding it larger snippets of code or logs to see how it helps in summarizing or problem-solving. Tools like GitHub Copilot or Codeium (IDE plugins) can also be useful for practice, as they give inline code suggestions. The key is to practice in conditions similar to the interview: use a timed, minimal-help scenario to simulate pressure. (Meta’sCoderPad likely has ChatGPT integrated, but even if not, practicing with any of these tools will build transferable skills.)
+Guides and blog posts
+A great example is Canva’s engineering blog post, Yes, You Can Use AI in Our Interviews, which explains why they encourage AI use and what good usage looks like.
+There are also community-driven guides, like Google Cloud’s Five Best Practices for Using AI Coding Assistants, which offers general tips on planning, prompt engineering, and keeping yourself “in the loop” of what the AI is doing.
+Pair programming practice: Try an AI pair-programming exercise. LockedIn AI’s blog post, AI Pair Programming Tips for Coding Interviews, suggests practicing the driver/navigator model with an AI assistant . For example, you can take a problem and alternately “be the coder” and “be the AI” – sometimes you write a function and let the AI review it, other times you let the AI write something and you review it. This builds the habit of interactive collaboration. Additionally, when practicing, narrate your thought process out loud (even if alone) to get comfortable explaining your reasoning while using the AI.
+Security and quality awareness: Be aware of the known pitfalls of AI-generated code so you can catch them. For example, AI may propose solutions that are inefficient or even insecure. A 2022 study found that about 40% of AI-generated code had security vulnerabilities if taken as-is. Knowing this, you can be extra vigilant about things like SQL injection, input validation, or memory usage in AI outputs. Resources like the OWASP top 10 or secure coding guidelines are good refreshers. They're not specifically AI-focused but helpful for reviewing AI code with a critical eye.
+Meta-specific preparation
+Since Meta uses CoderPad for their interviews, take some time to play around with it and the AI assistant (e.g., how to toggle the AI tool, how it displays suggestions, etc.). This video should give you a quick demo of how this environment will look like.
+
+
+Expected interview format: single file vs. multi-file challenges
+While official practice links (e.g., on the career portal) might present simple, single-file coding challenges, candidates should be prepared for a project-style, multi-file, or multi-part challenge during the actual Meta AI-assisted technical interview, especially for backend and ops roles.
+
+The goal is to simulate a real-world engineering task, which often involves:
+
+Interacting with an existing (but simplified) codebase: You may be given multiple files, such as a main application file, a configuration file, and helper modules, requiring code comprehension and navigation skills (where AI can be immensely helpful).
+Integrating multiple components: The challenge might require you to modify a shell script, write a Dockerfile, and implement an API endpoint, all of which are testing your ability to handle different layers of a system.
+Sequential tasks: You might first be asked to debug an issue in one file (using AI for triage) and then be asked to add a new feature that spans two other files (using AI for boilerplate).
+Focus your practice on navigating complex, multi-file code bases, leveraging the AI to manage complexity across the repo, tracing down code references using grep commands and as a quick fire ‘browser’ for syntax validation. Expect a rather underpowered model, not anything state-of-the-art, which means you need to be very thorough in reviewing the code the LLM provides.
+
+Another useful use case for the AI chat is implementation planning. Don't be afraid to paste in/attach context to brainstorm an implementation plan. This is a good practice and is encouraged, but remember, unlike StackOverflow, this is unvetted code, so put on your stack mod hat and gatekeep code from the model from getting into your project. Be pedantic and overly critical of all aspects, ranging from coding style to maintaining consistency, all the way to variable names and performance.
+
+Remember, the interviewers are evaluating how well you leverage the AI to produce a great solution. If you can demonstrate sound judgment, critical review, and clear communication while using AI – for example, generating a quick grep command here, a script there, debugging an issue with hints from AI, and always staying in control – then you will stand out as a forward-thinking engineer who’s ready for modern development challenges.

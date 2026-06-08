@@ -1,0 +1,48 @@
+I'm an international student at UNC. Here's how I got an AI summer internship.
+Apr 14, 2026, 5:37 AM ET
+
+This as-told-to essay is based on a conversation with Vivienne Hnin, a junior at the University of North Carolina at Chapel Hill who will be interning at AI-native startup Utilyst this summer. Her employment and identity have been verified by Business Insider. The following has been edited for length and clarity.
+
+I came to Chapel Hill in 2023 as an international student enrolled in pre-med.
+
+My country, Burma, was on the travel ban list last year, so I couldn't go home and had to find a summer job. As a biology major, I didn't have a lot of options for summer internships. That made me reevaluate my major because I felt medical school might be difficult as an international student with all the policy changes.
+
+So, I started exploring other options. Part of the reason I decided to pivot into computer science is because of AI. In the past, people who went into computer science had been coding since they were very young. They knew the fundamentals coming in.
+
+I didn't have robotics or computer science classes growing up. With AI, you can learn at a much faster pace. UNC was also really accommodating and helped me switch majors and explore my interests without locking me into a major that I chose freshman year.
+
+It was hard to adapt and get an internship this cycle because I started late, so I tried a bunch of tactics. Here's what worked:
+
+1. I started building projects and posting about them.
+Over winter break, I pivoted and started building projects with AI.
+These are essentially assignments you make yourself. A lot of juniors, especially those without internships secured, don't have personal projects. I learned that it's important to have a good front-end that's accessible because recruiters who review these projects aren't always technical.
+
+I made videos and posted about them on LinkedIn. That garnered some traction. Some recent alumna also started reaching out to me about coffee chats.
+
+I decided to cater all of my projects toward one or more major coding languages so hiring managers would see that I was proficient in all the major coding languages. I also launched the projects, which showed that I was able to make it a full-stack project.
+
+2. I attended hackathons.
+I started going to hackathons because they were a great way to learn new technologies and work with people.
+
+I also practiced a lot of technical concepts through self-studying.
+
+3. I networked a lot.
+I got LinkedIn Premium for a month and started cold DMing people. I had a lot of LinkedIn connections, and a lot of important people were either my first or my second connections at the time, so I was able to message them. I think it's really important to keep upping your connection count on LinkedIn. If you're a student looking for a job, I recommend getting Premium for a month.
+
+I searched for founders from UNC. I got ignored a lot, as one would expect when they beg for an internship in a LinkedIn DM. However, I received responses from two alumni, and both led to offers.
+
+One of the professors I reached out to actually got me an AI engineering internship at Utilyst, which I'll be working at this summer and fall.
+
+4. I used Handshake and career fairs.
+There are a lot of scam job postings. I found Handshake more reliable because it's affiliated with schools. Career fairs are also great because if you can convince the recruiter that you're worth their time, you may be able to skip the line and get an interview.
+
+5. I didn't listen to the noise.
+One thing that computer science and pre-med majors have in common is that they want to be the one person crossing the finish line. There's a lot of sabotage, and people are very business-minded.
+
+When you go on Reddit, you're going to see a lot of bad advice. For example, I was told to focus only on my grades, and that personal projects are useless because people can now build with AI, so they won't help you stand out.
+
+I have never been asked about my GPA, transcript, or even my courses. I have been asked primarily about my projects. Also, most of the interviews I've done actually accommodate the use of AI. Whether it's in real life or online, sometimes the advice is not accurate.
+
+People also make the industry seem more competitive than it is. I was talking with one of my fellow international students who's a CS major, and he told me I switched too late and I wouldn't be able to get an internship. That made me want to start applying.
+
+Correction: April 15, 2026 — An earlier version of this story misstated Hnin's comments on side projects. She said that juniors without internships often don't have personal projects.

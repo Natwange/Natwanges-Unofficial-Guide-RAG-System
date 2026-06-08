@@ -1,0 +1,1252 @@
+Okay,
+okay,
+okay,
+okay,
+okay.
+Go,
+Mark!
+That's what I'm talking about.
+Okay,
+okay,
+okay,
+okay.
+So,
+welcome back,
+welcome back,
+Speaker 1
+13:31:20
+welcome back,
+everybody.
+Um,
+we're gonna kick,
+um,
+the April Fire Friday off with our first session of the day,
+and I'm so excited to welcome Squarespace for a moderated Q&A.
+all about navigating tech,
+recruiting as a student,
+what works,
+what doesn't work,
+and how to stand out,
+especially in this job market.
+And today,
+we're joined by three amazing guests.
+Christian,
+a full-stack software engineer at Squarespace in the commerce organization,
+and before starting his career at Squarespace,
+Christian attended his local community college,
+and then transferred to Cal Poly San Luis Obispo,
+where he earned his degree in computer science.
+We're also joined by Daniela,
+a Columbia University alum and College Stock alum,
+who is now a software engineer at Squarespace.
+So we have an alumni coming back.
+And during her time at Squarespace,
+she's worked across revenue systems and domains.
+She's now a part of the Growing Domains Growth Organization.
+And we also have Courtney!
+Love Courtney,
+a talent acquisition partner for early careers at Squarespace who loves helping students break into tech and landing the dream roles they're genuinely excited about.
+This is really going to be a valuable conversation,
+especially for anyone thinking about internships and.
+new ground rules,
+and just how to understand recruiting a little bit better.
+So,
+without much,
+please help me welcome Christian,
+Daniela,
+and Courtney.
+Hi,
+guys.
+Speaker 2
+13:32:55
+Hello,
+hello,
+Hellerstack.
+So lovely to see you all again.
+I love seeing the emojis.
+I'm super excited to be here at a Fam Friday.
+So we have a wonderful presentation for you today all about tech recruiting.
+Navigating that process.
+But before we kick off,
+I do have a presentation that I'd love to share.
+I think I'm not sure if you can see it.
+Can I get a thumbs up if everyone can see it or not?
+Okay,
+cool.
+There we go.
+Awesome.
+So…
+Before we kick off into our channel,
+I'm Courtney,
+I'm a talent acquisition partner here at Squarespace,
+my pronouns are she,
+her,
+hers,
+and that's just a cute little picture of me and my dog,
+Penny.
+Uh,
+fun fact,
+Squarespace is a dog-friendly office,
+which we have later in our presentation,
+but it makes it really fun to bring her to the office,
+too.
+So before,
+again,
+we get into the presentation or the panel Q&A,
+first I want to start off with what is Squarespace?
+Our company,
+our mission is to build products that help entrepreneurs stand out and succeed.
+So we're an all-in-one platform to build a beautiful online presence.
+Blend elegant design and sophisticated engineering to enable millions of people to share their stories with the world,
+and our products are the simplest way to get ideas up and running online.
+We serve everyone from small business owners and local artists to the next generation of entrepreneurs shaping the world's most iconic businesses.
+And a little bit about our employee experience and perks,
+and what makes working at Squarespace just so awesome.
+Um,
+we're headquartered in the West Village in New York City,
+and as I mentioned,
+we are dog-friendly,
+hence why I get to bring Penny into the office sometimes.
+We have a beautiful open office space with lounges,
+game tables,
+and more.
+I know.
+Our interns during the summer love going to 12 and playing some Nintendo and some board games up there,
+which is always a good time.
+We have catered lunch three times a week,
+along with free beverages and snacks to fuel up during your work week.
+We also have weekly company-wide happy hour to bond with your fellow employees and just,
+you know,
+let them seamless after the week.
+Uh,
+we also have several different social Slack channels,
+like a coffee one,
+TV,
+board games.
+My personal favorite is Binge Watch Social,
+which is all about what TV shows are on.
+Uh,
+really fun to get to know what everyone's watching at Squarespace.
+And then we have tons of different in-person and virtual programming,
+so tons of different events that happen in the office.
+but also remote-friendly events as well.
+And then lastly,
+we have,
+uh,
+seven different ERG groups at Squarespace.
+This includes groups like,
+uh,
+Asian Pacific Islander Desi at Squarespace,
+Black at Squarespace,
+Queerspace,
+and so many more.
+A great way to.
+further your community while you're here as an employee.
+Now I know we're all interested in getting into our panel and learning more about tech recruiting.
+Today we're going to crack the code,
+the Tech Recruiting Guide 101.
+I'm joined by two awesome panelists,
+Christian and Daniela.
+And before we dive into some questions,
+I'd love to just do some intros.
+So,
+Christian,
+let's start with you,
+just do a brief introduction to yourself,
+a little bit about your hometown,
+your university and major,
+what role you have at Squarespace,
+and then what your favorite New York City.
+New York City activity is and then Daniela will pass it over to you.
+Speaker 3
+13:36:22
+Hi,
+Courtney.
+Thank you for the intro.
+So yeah,
+my name is Christian Castro,
+as you guys can see.
+I was born and raised in Central California,
+Fresno,
+California,
+for those that know.
+I ended up going to my local community college and transferring to Cal Poly San Luis Obispo,
+which is by the beach.
+Great weather,
+I highly recommend a visit.
+My current role at Squarespace is a full stack engineer.
+I really love my team and the people I work with in the company and our entire mission.
+And,
+oh,
+my favorite activity at New York.
+There's a lot,
+I mean,
+trying new foods is always a good option,
+but I'm trying to get into salsa dancing,
+so that's always been really fun,
+so.
+Okay.
+Speaker 4
+13:37:00
+Cool.
+Tulsa and I love that.
+Okay.
+Hi,
+everyone.
+I'm Daniela.
+I use she/her pronouns,
+and I'm originally from Houston,
+Texas.
+I graduated from Columbia in 2024,
+and I majored in CS.
+I also studied visual arts while I was there.
+Um,
+and now I am a software engineer at Squarespace.
+Um,
+I think that's pretty fitting,
+because we are a very design-centered company.
+And I'm on the Domains Growth team,
+and that is basically trying to make the Domains product a bigger part of Squarespace.
+Um,
+and my favorite NYC activity would definitely have to be biking in Central Park.
+Speaker 2
+13:37:40
+Awesome.
+Well,
+I'm excited to dive into some tech recruiting questions with you all.
+So let's just hop into our panel and I'm going to stop sharing my screen just so you can see all of us on the stage a little bit more clearly.
+But I'm going to start with thinking back to your time as a student.
+And Daniela,
+let's start with you since you had the mic last.
+Uh,
+but how did you first start preparing for the recruitment process?
+Were there any key steps that you took that you think helped you… that helped set you up for success?
+Speaker 4
+13:38:08
+Yeah,
+for sure.
+When I first started recruiting,
+it was the summer before my junior year.
+And honestly,
+I had no idea where to start.
+So much so that I let my first coding assessment expire because I was too afraid to try.
+Um,
+but once,
+you know,
+I started getting into things,
+one of the first things I did was actually attend the ColorStack,
+uh,
+Stacked Up Summit,
+which happens every summer.
+Um,
+and going to that summit.
+uh,
+let me understand what the recruiting process was like.
+It let me hear from,
+like,
+actual software engineers,
+and that gave me the confidence to start trying,
+seeing all these other people in the same boat.
+Um,
+so once I started my junior year,
+I ended up lessening my class load so that I could focus on recruiting.
+That gave me actual time in my,
+like,
+space in my schedule to focus on practicing and doing leet code and mock interviews and everything.
+Um,
+and beyond that,
+I also looked.
+for interview prep programs.
+So I ended up doing Meta's Above and Beyond Computer Science.
+Not sure if that still exists,
+but the structure was that every week we would hop on a call with some Meta engineers and focus on like a new data structure or interviewing technique.
+And we do like a lot of mock interviews with each other too.
+So what I did was like finding my community and my support system,
+making sure I had time in my schedule to focus on recruiting and finding and applying for interview prep programs.
+Speaker 2
+13:39:41
+That's great advice.
+Christian,
+what about you?
+Speaker 3
+13:39:45
+Yeah,
+great first question.
+And Daniela did cover some great topics.
+I also started kind of late in my junior year,
+which I really regret not trying sooner.
+'Cause in my head I was like,
+I'm not good enough to get an internship yet.
+And that's not the mindset you should have.
+You should definitely apply,
+apply,
+apply.
+Definitely apply as soon as you can,
+because…
+I realized that once I would apply and I would have an interview,
+like,
+around the corner,
+that's when I would have the most motivation to just study LeetCode and just work on,
+like,
+data structures and algorithms.
+So,
+just don't wait until your LeetCode skills are ready.
+Just apply as soon as you can,
+and definitely create a good resume.
+And make sure to get constructive feedback on that,
+make sure it's peer-reviewed by your classmates,
+your teachers,
+and any recruiters that you might know.
+So,
+I highly recommend just apply and making sure you have a good resume.
+Speaker 2
+13:40:34
+Definitely plus one to getting some constructive feedback on your resume,
+especially as students.
+I think it's always helpful to get a second eye on things.
+Then Christian,
+you mentioned LeetCode.
+I actually wanted to chat about that a little bit.
+Everyone talks about LeetCode and how to use it for prepping.
+But beyond practicing problems,
+what were your most effective strategies for preparing for technical interviews?
+Speaker 3
+13:40:57
+Yeah,
+I would just say like paying attention in all of your classes.
+I know like sometimes you might have an 8:00 AM and you don't want to go,
+just try to go to it,
+get closer with your teachers,
+your TAs,
+go to office hours,
+try to spend more time talking to people who are more knowledgeable and more experienced.
+And especially if you have a class in data structures and algorithms,
+really try to just zone in on that.
+And I'm sure it's going to help prepare you for your interviews.
+And I would also just try to take harder elective classes if you guys can like networks.
+Stuff like that.
+And then…
+And if you guys can,
+just to get the interview,
+maybe going on LinkedIn and asking for referrals,
+that's something I didn't do as much of,
+but I have heard a lot of success stories come from there,
+so that's my advice.
+Speaker 2
+13:41:44
+And Daniela,
+how about yourself?
+Was there anything outside of LeetCode that you did?
+Speaker 4
+13:41:49
+Yeah,
+I definitely plus one Christian's point on paying attention to data structures.
+I think that's the class that's most important when it comes to technical interviews.
+But beyond just like doing the problems,
+I think one big piece of advice I have is doing the problems out loud.
+Um,
+thinking out loud,
+because when you're in the interviews,
+um,
+any interview,
+really,
+you'll have to explain your problem-solving approach to the interviewers.
+Um,
+so weighing different solutions out loud,
+the brute force solution versus any,
+like,
+possible optimizations.
+Um,
+doing mock interviews with your friends.
+Even if they don't know anything,
+just asking them to listen.
+Getting comfortable exploring your ideas out loud,
+and having people hear them,
+and listen to them,
+question them,
+and maybe even critiquing them.
+Um,
+but being able to stand by.
+Your thoughts?
+Speaker 2
+13:42:38
+Actually,
+something I share with,
+uh,
+intern candidates in the phone screen when they're… when I ask how to prep for things,
+I always say,
+talk out your technical solutions out loud,
+because it may not be something you get to do in class all the time.
+Um,
+it's super helpful,
+especially as you're going through any technical recruiting process.
+And,
+you know,
+thinking about the recruiting process as a whole,
+what do you think is something that,
+uh,
+about the recruiting process that students overestimate or stress about too much?
+And Danielle,
+I'm going to start with you,
+and then we'll go to Christian.
+Speaker 4
+13:43:09
+Okay.
+Um,
+I actually have something that students maybe underestimate that matters a lot.
+Um,
+but what I would say is…
+Being coachable,
+I think,
+is a skill that maybe students might underestimate.
+Again,
+and also reiterate,
+being able to think out loud.
+In interviews,
+it makes sense that we focus on trying to get to,
+like,
+the right solution,
+the most optimal solution,
+but.
+Often it's okay to start with just a brute force solution and talk your interviewer through any optimizations or improvements that you're thinking of.
+It is supposed to be a conversation and a collaboration.
+It's okay to iterate in real time.
+Iteration is kind of like our whole job as software engineers.
+Software is always evolving.
+So just be eager to learn,
+be coachable into the right answer,
+and they want to see what kind of teammate you're going to be and how you'll be able to.
+Collaborate with them.
+Speaker 2
+13:44:11
+That's great advice.
+And Christian,
+how about you?
+It could be something that you think students overestimate or stress about,
+or maybe that they underestimate actually matters a lot.
+Speaker 3
+13:44:20
+Yeah,
+definitely.
+And I'll touch on the part that students overestimate or stress out too much about.
+I would definitely say when you go through the process of.
+interviewing,
+and you really want that offer,
+and you're still focused on it,
+but unfortunately,
+the company decides to go with a different candidate.
+It is a crushing feeling,
+but I do think that through every interview,
+you're a step closer in the right direction,
+and sometimes it's a blessing.
+in disguise.
+Like,
+for me,
+I had a couple of failed interviews,
+but eventually,
+I finally got one with Squarespace,
+and I was really happy.
+So,
+don't let one failed interview.
+kill your confidence,
+or… or make you not want to try anymore.
+Uh,
+you're just getting closer and closer,
+and through every field interview,
+you'll always get better.
+You'll always learn something to improve on.
+So that's one advice that I would give for that.
+Speaker 2
+13:45:11
+100 percent.
+Going through any technical process,
+you get to learn a lot more through failure sometimes than the successes.
+It's always great to have a little bit of a learning lesson there.
+Piggybacking off of that,
+Christian,
+thinking about times you failed interviews potentially.
+Did you ever feel underqualified or deal with imposter syndrome during recruiting?
+How did you handle it?
+Speaker 3
+13:45:34
+Yeah,
+definitely.
+I would say like my first two years,
+I didn't even want to apply for internships because I felt like I wasn't qualified enough.
+And that's,
+like I said,
+that's not the right mindset to have.
+And I think what really helped me is being consistent every day.
+I know it's,
+like,
+kind of…
+cheesy,
+but,
+like,
+consistency is really the most important thing.
+Doing legal problems,
+um,
+doing personal projects.
+going to my classes,
+going to office hours,
+that all built confidence in me,
+because I could see the gradual improvement.
+Um,
+like,
+if I looked on my GitHub account and I saw that I've committed 20 days in a row,
+like,
+it would really give me the,
+oh,
+wow,
+like,
+being really consistent,
+I can really see the improvement.
+And it really made me believe that I belonged in the tech industry and I could actually earn an internship.
+Speaker 2
+13:46:22
+I can vouch for both of you.
+You definitely belong in the tech industry.
+You definitely deserve an internship.
+And Daniela,
+how about for yourself?
+Do you ever have to deal with imposter syndrome or just feeling underqualified?
+Speaker 4
+13:46:34
+Yes,
+absolutely,
+all the time.
+As I said before,
+I let my first take-home assessment expire because I felt like I didn't know what I was doing.
+And I also feel like I was,
+just like Christian,
+I felt like I was kind of late to the game.
+Um,
+I only learned about software engineering because a lot of my classmates sophomore year were,
+like,
+bagging these crazy internships,
+and I was just,
+you know,
+starting out and learning the basics.
+Um,
+and I felt like everyone around me already knew what the recruiting process was like,
+and how to navigate it,
+and,
+like,
+they had been practicing LeetCode for so long when I started.
+Um,
+but something that helped me was finding my community.
+Um,
+ColorStack is definitely one of those communities that helped prop me up.
+Um,
+the interview prep program that I did also.
+Those two,
+they put me in the same room as a lot of other kids that were in the same boat,
+and it helped me realize that I was very far from alone,
+and getting past this was possible.
+And it was also just cool to see the other kids getting internships,
+and also cool when it was eventually my turn.
+So I would definitely recommend finding your people and growing together,
+pushing each other up.
+Clearly everyone here has taken that first step because you're in ColorStack now,
+so you have a community.
+But just know that everyone struggles with this,
+but hard doesn't have to mean impossible.
+Speaker 2
+13:47:59
+I love that.
+Look at you now,
+you're back giving advice to folks about something you're struggling with to start.
+It's so full circle.
+And thinking about how you… your improvement story,
+maybe.
+How did you improve between your first and last interview?
+And hopefully Squarespace was your last,
+but maybe not.
+I'll start with you,
+Daniela,
+and then we'll pivot back to Christian.
+Speaker 4
+13:48:21
+Yeah.
+For my first interview,
+I was definitely nervous.
+I was new to the whole process.
+I didn't have a lot of practice in technical interviews or just mostly interviews in general.
+I kind of stumbled through my first few.
+And I was definitely stumped on some of the questions that I got the first few times.
+But going through the process,
+eventually I was able to become more confident and put less pressure on myself to be perfect.
+Uh,
+my mindset… my mindset definitely shifted to…
+one that was focused on learning.
+Every interview was practice and a learning opportunity,
+and if I failed it,
+I took whatever feedback they could give me and tried to improve on that.
+And if I didn't fail,
+it would build up my confidence because I knew I was making progress on my technical skills and my ability to speak through,
+uh,
+different problems.
+Uh,
+even if it didn't lead to an offer,
+it was a good sign for me.
+And by my last interview,
+I felt a lot more comfortable in the process,
+I had a lot of practice,
+and I knew how to walk my interviewers through my projects,
+or talk through different technical problems.
+Um,
+so,
+I would say it definitely takes.
+Use of time and practice and consistency.
+Speaker 2
+13:49:42
+Christian,
+how about for you?
+Speaker 3
+13:49:44
+Yeah,
+I definitely feel like,
+uh,
+to improve in interviews,
+you have to take more interviews,
+right?
+Like,
+that's how you actually improve your interview skills,
+and the more you do,
+the better you'll be.
+Uh,
+in my personal experience,
+my first interview,
+I bombed the first behavioral round.
+Uh,
+I didn't know about the star format,
+and I was just rambling,
+so once I learned… once I bombed that,
+I learned how.
+behavioral interview should be,
+and I just practiced and practiced.
+I had a lot of motivation because I didn't want to fail the same part.
+And then the next interview did get on the behavioral,
+but then I failed the technical round.
+And I was like,
+"Ah,
+my technical skills aren't there yet." So after that,
+I really did try to work on whatever…
+For every failed interview I knew,
+I try to give feedback on what I did wrong and try to master that.
+Because I knew that it could be used in the next interview.
+I also realized that sometimes you study for a topic on an interview,
+and it doesn't actually appear on the interview.
+but it might appear on the next one.
+So,
+if you are studying for topics,
+and if they don't appear on the right one,
+you're like,
+I just wasted so much time,
+don't think that,
+um,
+it'll probably be used on the next interview.
+So,
+that's at least what happened with me.
+Speaker 2
+13:50:57
+Any prep is good prep.
+And I see we have some Q&A rolling in,
+and we just have a couple more open-ended questions that I have for Christian and Daniella,
+but I promise we'll get to some of these Q&As.
+But,
+Christian,
+for you,
+was there anything that differentiated Squarespace's interview process from other companies?
+If so,
+what was it,
+and how did that impact your decision to join our intern program?
+Speaker 3
+13:51:21
+Yeah,
+I would say the main difference I saw was I was asked for like a system design question and that's kind of rare for interns to have a lot of companies don't expect the interns to know how to do system design and Squarespace knew that,
+but they just.
+I think they just want to see how you can collaborate with another engineer on the team.
+So throughout that experience,
+it was very nice working and collaborating with the other engineer who was interviewing me.
+Um,
+the system design application,
+and it really showed me,
+like,
+some foreshadowing of how it would be,
+like,
+on the job,
+working with someone not knowing everything,
+but being able to ask the right questions,
+maybe being able to…
+go with my intuition on what I think could work,
+and then getting feedback on.
+Actually,
+we should probably go this way.
+So it's definitely like that type of it was like just a very cool,
+collaborative experience.
+And the engineer was very nice.
+So I really helped me realize how the culture is at Squarespace.
+Which is very collaborative.
+Speaker 2
+13:52:20
+Definitely collaborative here.
+And Daniella,
+how about for you?
+Is there anything that stood out about Squarespace's process that you're like,
+yes,
+this makes me want to join Squarespace.
+Speaker 4
+13:52:30
+Yes,
+definitely.
+Just to preface my answer,
+I loved Squarespace from the start.
+The way that I discovered it was actually Courtney.
+You sent me a LinkedIn message for a recruiting event at the office.
+I went and I saw the office,
+and I heard the engineers talk,
+and I was hooked.
+Um,
+in terms of interviews,
+I think the content itself was pretty typical to,
+um…
+when I compare it to,
+like,
+other interviews that I went through.
+Um,
+but what was kind of different was the actual interviewers.
+I feel like they were very kind and encouraging,
+but also not lenient.
+They definitely pushed me in the interviews to…
+think through a better solution,
+or,
+like,
+how we could keep improving.
+So much so that I thought I did really bad on one of them,
+but it ended up being fine,
+because I'm here.
+But,
+you know,
+it's just going back to remembering that sometimes it's not about getting to the perfect solution or the right solution,
+it's about.
+the process and your problem-solving process.
+Being open to several different paths forward,
+being able to weigh the trade-offs.
+They're just trying to see if you are going to be a good teammate and a coachable learner.
+But yeah,
+love Squarespace.
+Also helps that.
+we have a lot of meals and food provided,
+and a lot of really cool intern events,
+I would say.
+Speaker 2
+13:53:55
+A lot of cool people,
+a lot of cool perks,
+and a lot of great collaboration and learning opportunities,
+I think.
+And then I just have two… this one final question,
+and then one final,
+final question.
+But this one has to do with AI,
+I think,
+because it's pretty relevant.
+With the rise of AI tools like Claude,
+like ChatGPT.
+How has your approach to learning to code changed?
+If you were prepping today,
+how would AI change your strategy compared to when you were recruiting back then?
+And Danielle,
+I'll start with you,
+and then we'll go to Christian.
+Speaker 4
+13:54:26
+Yeah,
+I think this is definitely an important question.
+Um,
+I would say if I was recruiting now,
+I would do my best not to rely on AI while I'm building.
+my technical foundation.
+I feel like you have to learn the rules before you can bend or break them.
+Even as a new grad or a recent grad,
+I felt a little hesitant to embrace AI fully.
+Even as software engineers,
+we are relying on AI more and more to write our code for us,
+or do different parts of our jobs,
+but…
+We still need,
+uh,
+the technical background and the foundation to ensure that the AI is doing the right thing and knowing how to redirect it when it's wrong.
+or improving what it spits out.
+And I feel like me personally,
+I feel like I'm still building that foundation.
+But at the end of the day in interviews,
+it's just you.
+So definitely like use it as a sounding board or as a learning tool.
+But make sure that you're still building that strong foundation for yourself.
+Speaker 3
+13:55:32
+Christian,
+how about for you?
+Yeah,
+I definitely agree with what Daniela said,
+making sure you have a good foundation before you start using it.
+And also,
+it's a skill to know when the AI is doing something wrong,
+so you can instruct it to maybe go a different approach.
+I definitely agree with that.
+I would also say,
+like,
+for those of you that use Cursor or Cloud Code.
+Being in ask or plan mode a bit more than the agent,
+where the agent's just writing your code.
+just asking you questions on how could I do this,
+or can you create a plan.
+that would,
+like,
+like an architecture or something like that,
+um,
+other than writing the code for you,
+because then you don't learn as much,
+so I would definitely suggest,
+um.
+Using Ask and Play,
+like,
+a lot more.
+Speaker 2
+13:56:20
+Definitely.
+And then I just have one final question before we dive into some Q&A from… from the member… the ColorStack members.
+Um,
+Christian,
+if you could leave students with one piece of advice when it comes to going through the recruiting process,
+what would you share?
+Speaker 3
+13:56:34
+Yeah,
+uh…
+I will… I would just say that,
+you know,
+the recruitment process is,
+like,
+difficult and challenging,
+like,
+as you guys know,
+but all you need is one offer,
+that's all it takes,
+so just keep applying,
+keep studying,
+keep doing LeetCode,
+build projects,
+join clubs,
+which you guys are in ColorStack.
+Uh,
+find study groups,
+and also just give your time,
+or give your brain some time to rest.
+Um,
+your brain really needs it,
+so go outside,
+it's great weather now.
+Uh,
+I was in New York.
+And it is a journey,
+but I believe that each and every one of you have like the potential to earn your dream job.
+So it's just in your control to be consistent and put in the work.
+Because that's really what it is,
+is just working through the problems and not really,
+like,
+giving up because of one field interview.
+It's just a consistent grind,
+and…
+That's all I have to say about that.
+Good luck to everyone,
+each and every one of you.
+Speaker 2
+13:57:28
+Thank you,
+Christian.
+Daniela,
+how about for you?
+What's one piece of advice that you want to leave students with today?
+Speaker 4
+13:57:35
+Yeah,
+um,
+I definitely plus one Christian,
+everything that he said.
+Uh,
+it's definitely a consistent grind.
+Um,
+I would say,
+um,
+maybe two things.
+One,
+again,
+I'll just reiterate,
+being able to speak out loud,
+speak through your thought process and your problem-solving process.
+And two,
+this kind of applies to all recruiting,
+but don't be afraid to brag about yourself.
+Um,
+these people won't know anything about your accomplishments or what you've done unless you tell them explicitly,
+so don't be afraid to…
+Be your own strongest advocate.
+Speaker 2
+13:58:12
+I've lost 1,000 to that.
+Well,
+Daniela and Christian,
+thank you for walking through our panel.
+We're going to take a couple of questions now.
+I know we're almost at time,
+so we're going to speed round through this.
+I think the first question we have is.
+What's the best strategy in practicing LeetCode?
+I find it a bit overwhelming when prepping for technical interviews,
+and I'm going to pivot this one first to Christian.
+Let's have you take this one.
+Speaker 3
+13:58:40
+Yeah,
+I think with learning any type of topic or subject,
+learning how to learn,
+like how does your brain actually learn these topics is really important.
+So for me personally,
+it was always reading,
+writing,
+implementing.
+So I would take a lot of notes.
+And then I would actually implement it,
+but that's how I personally learned,
+um,
+the data structures and algorithms.
+I would suggest that you find the best way how you can learn it.
+And,
+uh,
+I know it's not,
+like,
+a concrete answer,
+but I think that's the most important thing,
+is how your brain.
+actually learns and retains information.
+Speaker 2
+13:59:16
+All right,
+next question here.
+One thing,
+one big thing is building projects.
+First part of this question,
+did you make any projects and how did you go about learning languages,
+design,
+et cetera?
+Dale,
+let's have you take that first part of the question.
+Speaker 4
+13:59:33
+Yeah,
+definitely worked on projects.
+I think since,
+you know,
+since y'all are all college students,
+you'll probably have some projects from your classes.
+Um,
+I put a lot of big projects from my CS classes on my resume.
+um…
+Let's see,
+how did you go about it?
+Learning languages,
+design,
+etc.
+Yeah,
+I think,
+honestly,
+there's no shortcut for experience,
+but there are a lot of,
+uh…
+projects that you can do that are just,
+like,
+online that already… that they've already been implemented,
+so I think those are good places to start,
+Speaker 2
+14:00:09
+too.
+Yeah,
+and how would you go about,
+you know,
+starting it,
+especially for freshmen?
+Like,
+if you were to go back,
+uh,
+to freshman Daniela and say,
+here's where you should start building projects or learning how to,
+where would you go?
+Speaker 4
+14:00:22
+Yeah,
+good question.
+So I would say,
+I'll give an example.
+So one of the first classes that we have to take,
+that I had to take was one called advanced programming.
+And that one was all done in C.
+Um,
+and that one was basically starting from the very beginning,
+like,
+learning how to manage memory,
+like,
+on your own,
+in your code.
+Um…
+And that one was starting,
+like,
+from scratch.
+So I would say…
+doing a project from start to finish.
+Yeah,
+sorry,
+I think I'm,
+like,
+losing my train of thought.
+In my class,
+we built a web server.
+So I would say doing something,
+like,
+kind of lower level like that will give you a good understanding of the entire stack.
+Um,
+yeah,
+so just starting there.
+Speaker 2
+14:01:14
+Definitely,
+or just even passion projects.
+I feel like if you've had an idea,
+just go about trying to build it.
+Now there's so many different tools out there that can just help you get started if you just want to practice your coding skills in a different way.
+Then last question,
+I'll have both of you take this one.
+Christian,
+we'll start with you.
+Daniella,
+we'll end with you.
+Which technical skills or areas of knowledge are most important for software engineering roles?
+Speaker 3
+14:01:41
+That's a really good question because I think it is always changing.
+And I guess because it is always changing,
+just being able to learn on the fly,
+being able to adapt with new technologies is very important.
+I wouldn't stress too much about knowing a framework like React.
+'Cause in a couple of years,
+maybe like there's another framework out there.
+Maybe there's different skill we should learn.
+So not getting caught up in just one specific thing,
+but just having the general knowledge and the computer science foundation to learn any single framework or any single topic.
+I would say that's very important,
+like,
+um,
+being able to read docs,
+being able to write docs.
+It's not just coding that we do every day,
+it's also a lot of communicating and gathering knowledge,
+so…
+Um,
+so yeah,
+don't get caught up in just learning one thing.
+I think I made that mistake,
+so,
+um,
+yeah,
+just build a really good foundation to be versatile in any field that you want to go into.
+Speaker 2
+14:02:34
+Daniela,
+how about for you?
+Speaker 4
+14:02:36
+Yeah,
+I definitely plus one that I think in terms of technical skills,
+areas of knowledge,
+starting with data structures.
+I think that's a that's a great foundation good for interviews and then moving on to.
+um,
+broader things like databases,
+networks,
+distributed systems,
+and I would plus one Christian's point on being flexible and willing to learn,
+being collaborative.
+I think those are all really great skills for being an engineer.
+Speaker 2
+14:03:07
+I also think,
+although I'm not an engineer,
+I will say,
+I think having your fundamentals down,
+too,
+like a strong foundation,
+whether it's in Java or JavaScript,
+whichever roles you're going for,
+is going to be an important jump-off point,
+but you don't have to know everything,
+and being able to be coached and growing there is a skill,
+too.
+And I think we're… we have time for one more question that's specifically for me,
+so I'll take myself into the hot seat now,
+y'all.
+Uh,
+for Courtney,
+what helps new grad candidates stand out if they have limited direct software engineering experience?
+An example would be if they have previous internship experience in roles other than software engineering.
+but are CS-related,
+or computer science-related.
+I think you don't necessarily have to have,
+you know,
+purely software engineering internships to stand out as a new grad.
+I think anything that's tech-adjacent,
+whether it's more IT-related,
+or just showing those skills.
+um,
+is helpful,
+but in terms of not having that direct internship,
+show that through projects and clubs.
+That would be super helpful.
+So I would love to see if you haven't had that direct tech experience,
+um,
+looking at how you contributed to a project that was maybe Java-based,
+if you're going for back-end engineering roles,
+and being able to.
+Include that in your resume,
+being able to speak to your experience,
+maybe leading a project.
+If you have any hackathon experience,
+that's helpful as well.
+And then when it comes to clubs and organizations,
+if you're a part of a woman in computer science,
+have you taken a leadership role there?
+Just showing that you have some of those tech skills,
+even if you haven't necessarily had that direct tech experience as a software engineer.
+Um,
+I know that that's a very brief answer.
+I could probably talk about these questions all day.
+Uh,
+so we super,
+super appreciate you,
+you know,
+submitting all of them and sharing more.
+I just have a quick wrap-up slide on our end,
+because I'm sure everyone's a little bit curious about what our interview process looks like here at Squarespace.
+Um,
+and just to give you maybe some tips on what to look for in the future at other companies,
+um,
+our interview process is pretty straightforward.
+Um,
+first,
+there's a technical assessment.
+It's a hack rank that you take in either Java or JavaScript.
+That's reviewed by a full-time engineer here at Squarespace when submitted.
+Um,
+if all goes well there,
+you move on to a phone screen with a talent acquisition partner,
+and that's really where we learn more about you,
+your experience,
+and dive a bit further into your background and,
+uh,
+tech experience.
+And then,
+if all goes well from that point,
+you move to two technical interviews.
+So,
+it's two separate code pairs.
+One is a.
+data structures and algorithms,
+code pair with a Squarespace engineer,
+and the other is,
+as Christian mentioned,
+a system design interview or code pair with a Squarespace engineer.
+But for us,
+it's pretty straightforward.
+Um,
+we are closed for our summer 2026 internships,
+but keep an eye out for summer 2020.
+I cannot believe I'm already saying that.
+Um,
+and in the future,
+we'll reach out to everyone who attended today to,
+um,
+you know,
+invite them to apply for our internships next summer.
+But we thank you all for joining us.
+Daniella and Christian,
+a huge thanks for you,
+or to you both,
+for joining us today and sharing such awesome insights.
+We wish you the best of luck at an internship this summer,
+a new grad role,
+or if you're just starting out,
+and we really look forward to hopefully seeing you at a future Squarespace event.
+Thanks all!
+Speaker 1
+14:06:27
+Thank you.
+Thank you so much,
+Courtney.
+Thank you,
+Daniela.
+Thank you,
+Christian.
+That was such an amazing session.
+Even as a student,
+I enjoyed listening to the tips and inside a scoop.
+And I'm sure our members are walking away with so much that they can apply for the next recruiting session.
+You guys,
+are we ready for the giveaway session?
+Are we ready?
+So,
+we're gonna put the question in the Q&A,
+and the answer will be whoever answers it in the Q&A.
+So the question is,
+where is Squarespace headquartered?
+Where is Squarespace headquarters?
+The first answer…
+And let's see.
+Let's see who got it.
+All right.
+Oh,
+we got some really fast answers.
+Alright,
+that's a lot of answers.
+Joanna,
+help me!
+Okay,
+drumroll please!
+And the winner is Aaliyah Umoru.
+Congratulations,
+congratulations.
+Um,
+one of the College Tech,
+um,
+Fam Friday Ambassadors will reach out to you by the end of… by next week,
+and congratulations on winning that gift card.
+Um,
+thank you so much again,
+so Christian,
+Danielle,
+and Courtney for making out time to do the session and sharing their insights with the CallStack community.
+Uh,
+we're gonna go on another break,
+and we'll be back at 2 p.m.
+at 2.15 p.m.
+with Salesforce,
+and as always,
+the networking document is pinned in the chat,
+so make sure to add your info if you haven't already.
+Um,
+but let's go for another 10-minute break,
+quick stretch,
+grab water,
+connect in the social lounge,
+and I'll see you soon.
+Bye-bye.

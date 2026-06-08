@@ -1,0 +1,1024 @@
+why of a feature before it's built,
+ensuring our technical decisions are vetted by the team for long-term sustainability.
+And last but not least is continuous learning.
+You aren't expected to know everything on your first day.
+You'll be paired with mentors who will help you navigate Google's internal tools and unique development environment.
+Google is a vast ecosystem,
+and as a 2027 graduate,
+you are considered for a variety of teams across the company.
+We look to align your academic strengths and interests with our business needs in areas such as artificial intelligence and machine learning,
+helping to deploy and build the next generation of AI-powered features.
+Focusing on model efficiency,
+data pipelines,
+and intelligent infrastructure.
+Another area is Google Cloud,
+where you'll be developing the distributed systems and security protocols that power the digital infrastructure for businesses and developers worldwide.
+There's also core products and platforms where you'll contribute to the evolution of search,
+YouTube,
+maps,
+and ads,
+focusing on scalability,
+latency,
+and user experience at a massive scale.
+And another is engineering productivity,
+where you'll build the very tools,
+compilers,
+and frameworks that Google's own engineering community uses every day to be effective.
+To ensure our incoming graduates are set up for success,
+we evaluate applications based on two sets of criteria.
+minimum,
+and preferred qualifications.
+Minimum qualifications are the foundational requirements for the role.
+They include educational background,
+which you should be currently pursuing a bachelor's or master's degree in computer science or a related technical field with a graduation date by the time you start in 2027.
+The next is core programming,
+experience with one or more general-purpose programming languages,
+such as Java,
+C++.
+Python or Go.
+And the last is computer science fundamentals.
+A strong grasp of data structures,
+algorithms,
+and software design principles.
+And then we also have the preferred qualifications,
+which are additional experiences that can help differentiate your application.
+This includes practical experience,
+such as previous internship experience or involvement in significant technical projects.
+Particularly those involving large-scale systems or complex problem-solving.
+Another is specialized technical depth.
+which is familiarity with specific domains such as generative AI,
+distributed systems,
+mobile development,
+or cloud networking.
+And finally,
+collaborative communication,
+which is the ability to explain technical concepts clearly and work effectively within a team environment.
+While meeting all of these qualifications is the first step in joining Google,
+your growth doesn't stop once you've cleared the interview process.
+We recognize that the transition from a bachelor's or master's program to a high-scale engineering team is a significant milestone.
+And because that transition looks different for everyone,
+we have a second pathway for our 2027 graduates.
+The Career Catalyst Program.
+While the early career software engineering role offers immediate immersion in a single team and product area.
+The Catalyst program is a 13-month rotational journey within our AI and infrastructure organization.
+This program is designed for those who want to gain a broad,
+cross-organizational understanding of how Google's core technology is built,
+from custom hardware to global scale models.
+It's important to highlight that,
+just like the early career software engineer role,
+the Catalyst program is a full-time position from day one.
+While the first 13 months are spent in a specialized rotational structure,
+this is a dedicated career path,
+not a contract or fixed-term role,
+and it's built for long-term impact.
+The AI and Infrastructure Organization provides a foundational technology that powers Google's products for billions of users.
+The mission is to deliver AI and infrastructure with unparalleled scale,
+reliability,
+and velocity.
+The work within the organization goes beyond individual features to focus on the intersection of AI and hyperscale computing.
+Catalyst program participants will gain direct exposure to TPUs,
+Vertex AI,
+Speaker 1
+18:12:52
+and global networking.
+The organization values technical rigor and bold thinking,
+because these systems must perform at a level that supports the entire global ecosystem.
+It's an environment built for those who are mission-focused and ready to act responsibly while solving complex problems that do not yet have established answers.
+Speaker 4
+18:13:13
+Got it.
+Speaker 1
+18:13:15
+So,
+the Catalyst experience is unique because of its structure,
+which ensures participants don't just learn one system,
+but gain a full-stack understanding of the ecosystem.
+This journey is defined by three key pillars.
+The first is the rotational exposure.
+After 1 month of dedicated onboarding,
+you'll complete 3 4-month rotations across different teams.
+This ensures that you walk away with a full-stack understanding of our eco… of our infrastructure,
+from the hardware level up to the AI agents.
+The second is structured mentorship.
+Every participant is supported by a key host manager for long-term growth,
+and a rotation host manager for each specific assignment to provide regular feedback.
+The last is cohort community.
+Engineers in this program move through their first year as part of a dedicated cohort,
+paired with a senior mentor who provides guidance on navigating Google's unique development environment.
+To ensure our incoming 2027 graduates are ready for this pace,
+we look for two sets of criteria.
+The minimum qualifications are currently pursuing a bachelor's or master's degree in computer science or related technical field with a graduation date by the time you start in June 2027.
+The next is software development experience in languages like Python,
+C++.
+Java or Go.
+And a strong foundation in data structures and algorithms,
+whether that was built through coursework,
+internships,
+or open source contributions.
+We also have preferred qualifications for this role,
+including demonstrated problem-solving abilities and a sense of urgency for pushing boundaries and exploring new ideas.
+Hands-on experience in AI,
+machine learning,
+or infrastructure.
+And the versatility to learn new coding languages as a project requires.
+Ultimately,
+successful candidates are those who can communicate technical trade-offs clearly and thrive in a collaborative,
+fast-moving team environment where the pace of innovation is high.
+While these qualifications are the entry point,
+the AI Career Catalyst program is truly about accelerating a long-term professional trajectory.
+The program's engineered to provide a soft landing through dedicated peer cohorts,
+mentorship,
+and leadership seminars,
+while ensuring a fast start on high-impact projects.
+Throughout this 13-month rotation,
+participants gain a system-level understanding of how Google builds for the future,
+transitioning into a permanent placement within the AI and infrastructure organization to continue their long-term career journey.
+Both the early career SWE role and the AI Catalyst program offer a seat at the table.
+Whether your goal is to develop technical immersion in one area or a rotational view across the organization,
+both pathways provide the advocacy needed to turn a 2027 graduation into a high-impact career.
+So for those interested in joining either program in 2027,
+timing is a very important factor.
+Applications for the AI Career Catalyst program will open this summer.
+While the early career software engineer role will open early fall.
+You're of course welcome to apply for both programs to see which path best aligns with your experiences and goals.
+Because these application windows are typically brief,
+the most effective way to stay ahead of it is to visit the Google Career site today and set up job alerts.
+This ensures that you're notified when the rolls go live,
+and allows for your application to be submitted right away.
+It's also a great idea to have your Google Careers profile updated and ready now,
+so that when the window opens,
+the focus can be entirely on just hitting submit.
+These roles move very fast,
+so preparing now is going to be the best way to ensure that your 2027 journey starts on the right foot.
+Okay.
+I know that was a lot of information,
+but I do want to switch gears a little bit and bring on our two nuclears,
+Jonathan and Toby.
+We want to hear directly from two people who have been in your shoes not too long ago,
+and they know exactly what it's like to be a student transition into working at Google.
+So again,
+we thought we'd like to hear it directly from them.
+Okay,
+Jonathan,
+would you like to start by introducing yourself?
+Speaker 2
+18:18:13
+Of course.
+So I'm Jonathan.
+I recently returned to YouTube after graduating in December from the University of Florida.
+Go Gators!
+with a four-year CS degree.
+Before I started college,
+I lived in Asia for two years,
+learned Chinese,
+and I interned there as well.
+Later,
+I had the opportunity to intern at YouTube Shorts.
+And I was fortunate enough to return to the same team.
+I also spent a lot of time exercising,
+including marathons and some time at the Google gym.
+And I'll pass the…
+Pass it over to Toby.
+Speaker 3
+18:18:50
+Hi there,
+everyone.
+My name is Toby.
+I've worked at Google for a year and three months now on the accelerator systems team in the artificial intelligence and infrastructure org,
+located in Seattle,
+but coming to you live from New York City right now.
+I graduated from MIT in 2024,
+twice,
+once in May.
+my undergraduate degree in computer science,
+Course 6-3,
+if anyone knows what that means.
+Uh,
+and in December,
+with my MEng,
+also in computer science,
+MEng is Master's of Engineering.
+I was Google intern twice as well,
+once as an ASDI intern in Sunnyvale working on search,
+and once as a SWE intern in Kirkland on persistent disk.
+I was a swimmer in college,
+but now you'll find me in the Google gym pretty much every day.
+I've also taken up rock climbing and running.
+Speaker 1
+18:19:34
+Awesome.
+Thank you so much for your introductions,
+Toby and Jonathan.
+Um,
+I'm sure both of you heard my description of the early career SWE role.
+Would you say that my description does a good job of explaining what a SWE may be doing here at Google?
+And could you elaborate a bit more about what you do in your role?
+Toby,
+do you want to kick us off?
+Speaker 3
+18:19:55
+Yeah,
+sure.
+For my team,
+we work a lot on software qualification and deployments,
+often in taking firmware from NVIDIA,
+as well as other partner teams.
+I work a lot on release planning,
+as well as tooling,
+mostly in Python,
+for automating some of the manual work we do as part of managing GPU.
+Graphics processing units,
+hardware accelerators for computer graphics as well as AI training.
+So all our GPU test machines are on call on our team often engages with real customer issues on our machines,
+sometimes working in live debugging sessions with other companies engineers.
+Jonathan,
+can you tell us a bit more about your work within YouTube?
+Speaker 2
+18:20:31
+Uh,
+yeah,
+so I returned to my same team here at YouTube,
+and we recently started working on some exciting work that I can't share yet.
+But previously I was working on some somewhat similar stuff,
+building features for shorts,
+mainly for the shorts creation workflow.
+This means like the camera,
+various style effects or filters as you may know them.
+And creator-facing tooling,
+allowing creators to ship their own effects.
+Some examples include a pitch detection,
+a volume detection,
+or some various minigames.
+Speaker 1
+18:21:08
+Thanks so much for sharing a bit more.
+So what are the problems that you're solving?
+I know at Google,
+there are so many projects and teams.
+How does your work impact users or internal teams?
+Jonathan,
+let's start with you and YouTube for this question.
+Speaker 2
+18:21:27
+So primarily we're directly impacting end users,
+both creators and viewers.
+Creators by lowering the friction to post content.
+And what I mean by friction here is making it as easy as possible for anyone to be a creator.
+Maybe that's through UX by minimizing the number of taps to get to the camera or through new tooling.
+Speaker 1
+18:21:52
+That's super interesting.
+And who doesn't love more content from their favorite creators?
+Toby,
+can you explain a little bit more about what artificial intelligence and infrastructure is and the project's team and impact?
+Speaker 3
+18:22:07
+Yeah,
+definitely.
+Obviously,
+we know about the large language models that we've all been using.
+Artificial intelligence and infrastructure is working on intake of the newest previously mentioned GPU and TPU tensor processing units,
+which are designed by Google for hardware acceleration for neural network machine learning.
+Those accelerators are in order to sell them for AI model training and inference.
+Most of our team's projects are new product initiatives,
+most of which are based on NVIDIA data center GPU hardware releases.
+We work with the platforms engineering team and data center technicians to equip GPU racks with the necessary software within those Google data centers to support both virtual machines and bare metal instances.
+I'm with the capacity planning team as well to coordinate customer capacity onboarding.
+There's many internal teams that make up the necessary software stack to enable GPU virtualization.
+So while we're not working directly with DeepMind on Gemini,
+we're working on building stable infrastructure for artificial intelligence for Google internal teams and other customers.
+Speaker 1
+18:23:06
+Awesome.
+Thank you both for all of this information.
+Um,
+I do want to switch gears a little bit again and talk about transitioning from academia to Google.
+I know that is a big transition,
+so could you both share what you wish you knew?
+Who wants to go first?
+Speaker 3
+18:23:24
+I can go ahead here.
+I think that the biggest thing for me about transitioning to Google is,
+like,
+the lack of homework.
+You only need to work during work hours,
+which made me feel like I wasn't really doing much at first.
+I do think it's important to detach from work,
+though,
+and find things to do outside of work.
+And as a super cliche,
+don't be afraid to ask questions.
+It's going to make your life much easier as people on your team have been there much longer and have contacts for more situations.
+And don't be afraid to ask for more or less project work,
+depending on how your current assignments are going.
+Your manager is there to help you,
+not to please you.
+Jonathan,
+was it the same for you?
+I miss anything there?
+Speaker 2
+18:24:01
+Yeah,
+I agree.
+And I'd also like to double down on the detaching from work.
+So I spent a lot of my college working towards the opportunity to work at a…
+company of this caliber,
+so I worked quite a lot.
+But recently,
+I've been realizing the importance of work-life balance,
+especially since my career is going to last a lot longer than 4 years,
+right?
+Not like college.
+But I think Google is a great place for work-life balance,
+and I think it has allowed Google to scale to the size it is and with the culture that we have.
+Speaker 1
+18:24:36
+Completely agree.
+It sounds like both of you worked really hard to get here,
+and I think that's really solid advice.
+Um,
+so,
+being non-technical and a recruiter,
+I always have candidates asking me how a candidate should prepare for working in the industry.
+So,
+what prepared you most?
+Was it a project?
+Was it testing code?
+Or was it coursework?
+Speaker 2
+18:25:01
+So I did five internships,
+but I actually found that hackathons won or lost.
+had the largest impact and were brought up.
+the most brought up topics across all my interviews,
+across all the companies that I interviewed at.
+I also found that it more closely corresponds with my actual day-to-day work.
+But you still need to know your data structures and algorithms.
+That's a given for engineers here.
+So definitely pay attention in that class.
+Um,
+but presenting to a judge in 5 minutes what you did in 24 hours is definitely a good skill for the workplace,
+and communication,
+especially,
+uh,
+here at Google.
+Personally,
+this allowed me to hit the ground running,
+and I was able to more smoothly work across disciplines like UX and PMs,
+which we interact with quite a lot,
+as you can imagine,
+with a user-facing product like YouTube.
+Speaker 3
+18:25:55
+Yeah,
+plus 1 to that.
+I think that outside of internships at Google,
+which were great preparation for me working at Google,
+just having rigorous coursework helped prepare me for actual work.
+Most things I do are less challenging than the hardest classes I feel like I took at school,
+and if I could push myself there,
+I can do whatever they need me to do here.
+I do think having a variety of technical work,
+such as working in multiple coding languages,
+Python,
+TypeScript,
+JavaScript,
+C,
+as well as lower level assembly and RISC-V,
+help with general understanding of software engineering and the trade-offs of design decisions in terms of speed and space complexity.
+I thought of it as applying what I learned in algorithms class,
+like Johnson mentioned.
+On a less technical point,
+I think that each team is pretty different,
+and it's important to have an open mind.
+Uh,
+group work and classes and research projects help prepare me for different work styles and proper communication,
+which is almost more important than efficient work in a large company like Google.
+Speaker 1
+18:26:49
+Great.
+And lastly,
+I get a ton of questions about two things.
+First is the types of project that folks work on,
+which I think we've talked quite a bit about that already.
+But the second is interviews.
+So Toby and Jonathan.
+What advice can you give for our aspiring Googlers as they prepare for their interviews?
+Speaker 3
+18:27:13
+I get these questions a lot from my friends at school as well.
+I actually became an interviewer here at Google,
+so I'm pretty familiar with interviewing now.
+I'm happy to share some advice regarding the classic technical interview that we're all dreading,
+I'm sure.
+Uh,
+definitely choose a programming language that you're comfortable in,
+not something obscure that you think is gonna impress your interviewer.
+It'll make everything easier,
+uh,
+knowing syntax,
+sticking to a consistent style,
+and showcasing your general programming ability.
+Interviews can be stressful.
+Easily forget different things there.
+Another thing is you should work through and explain your answers.
+The point of the interview isn't to try to trick you or get you to make a mistake.
+You should think things through,
+ask questions if something isn't clear,
+and communicate with your interviewer to explain each decision that you're making and why you're making it.
+Here at Google,
+you want to see your reasoning ability.
+Obviously,
+correctness is important,
+but not having the perfect answer on the first try doesn't mean that you're not going to get hired.
+Finally,
+your interviewer is here to help you as well.
+That's why they have to go through certain trainings.
+They have to work here for a certain amount of time.
+As said before,
+ask anything that could be seen as ambiguous.
+They were in your shoes once as well,
+so they know how difficult the questions can be and how difficult bringing yourself up to go to the interview can be.
+So don't feel like your question is dumb.
+Good luck with everything there.
+Any other things you want to add,
+Speaker 2
+18:28:29
+Jonathan?
+Yeah,
+so code quality and correctness are a given,
+but really what's most important here is communication.
+So just imagine everyone that you're working with is super talented,
+super smart,
+but they can't really explain it to you.
+The clear communication here is critical for success,
+especially at a Google-scale company.
+Given the vast number of people and the complexity of our systems,
+it's impossible for any one person to understand the whole thing,
+even within a single product area.
+And even within that single product area as well.
+Uh,
+some advice I received last year was to try and approach the interview like pair coding,
+so I took that to heart.
+I made sure the interviewer and I were on the same page the whole interview.
+Talk through your thought process.
+I would frequently say things like,
+so my initial thought here is data structure X or maybe Y because of Z similar problem that I saw before.
+And then,
+um…
+Yeah,
+so another thing here is…
+I'd also say that after you've been,
+like,
+considering some approaches,
+say,
+like,
+oh,
+I'm looking at,
+like,
+approach A,
+approach B,
+here are,
+like,
+some of the trade-offs that I'm thinking about,
+what are your thoughts before I start implementing this?
+Another good question is,
+do you think I'm missing anything here?
+The interviewer wants to help you out to jump off what Toby said just before me.
+The interviewer wants you to succeed,
+so try to make the job easy for them by communicating with them.
+Some advice is not to jump straight into coding.
+Some context here is if you look back to the origins of Google,
+the founders were PhD students,
+so you can imagine we have a somewhat academic culture.
+It's like writing design docs,
+discussing them,
+talking about theoretical aspects.
+Um,
+so,
+like,
+when everyone's talented and smart,
+the hard part is making sure that we're all on the same page,
+and we're all building the…
+the right thing.
+Regarding interviews.
+um…
+I did good on my interviews,
+even on some of the ones where I hadn't even written the full implementation.
+For example,
+I was writing a solution to one of my questions and I had the thing in pseudocode and me and the interviewer,
+we agreed this approach was a good approach and I was converting it.
+It's a Python,
+right?
+But I couldn't remember the name of one of the methods.
+So I told the interviewer,
+there's this method for this data structure.
+All of the different languages have it.
+I can't remember specifically what it's called,
+but it works like this.
+Can we just pretend this is what it's called for now?
+And the interviewer was like,
+yeah,
+that makes sense.
+So they're looking at the big picture here.
+But last piece of advice is relax and focus on communication.
+Speaker 1
+18:31:21
+That is such great advice.
+Thank you both so much.
+I know that our viewers are very excited to have their questions answered.
+So let's dive into the Q&A.
+To preface this conversation,
+um,
+you know,
+the first cohort of our Career Catalyst Program has not yet started,
+so if viewers have further questions about the Career Catalyst Program or SWE Early Career Program.
+Please feel free to use the blue ask a question button.
+Um,
+lastly,
+I do want to remind everyone that,
+um,
+if we're not… that we're not able to answer any questions about your specific candidacy or situation.
+With that said,
+let's go ahead and jump into the Q&A.
+So the first question here is for Toby and Jonathan.
+Looking back at the first few months at Google,
+was there a moment where something you learned in school or at an internship actually held up in the real world?
+Speaker 3
+18:32:26
+Yeah,
+I think I can answer this one.
+So when I was in school,
+when I was senior,
+I took this class called Software Performance Engineering.
+It was like by far the hardest class I ever took.
+It was like 20 hours a week.
+It was ridiculous.
+But basically,
+the entire premise of the class is that you're given a working piece of code.
+The code works 100%.
+That's the right thing.
+But your grade is based on how much faster you can make it.
+So it was all in C.
+And basically,
+we were just trying to do a ton of optimizations on a piece of code in order to make it run faster.
+Um,
+and in my first few months at Google,
+my manager actually asked me.
+to help out with this,
+uh,
+automated… this AI-based test.
+Um… it's basically,
+like,
+we're trying to build AI-based test fixers.
+So,
+one of the things was aggregating test failures into individual groups,
+and we would have to…
+iterate over tons of data.
+So,
+one of my first projects was actually optimizing that to cut down the amount of time that we needed to.
+run that,
+uh,
+cut down the amount of tokens we need to pass into Gemini,
+and I think I was able to cut it down by… from an order of hours to,
+like,
+order of 15 minutes,
+so that was pretty exciting for me.
+Speaker 1
+18:33:36
+Great.
+Thank you both.
+Um,
+the next question here is from Harsh.
+Um,
+how should one prepare themselves for technical roles?
+Should one just focus on data structures and algorithms,
+or cover all aspects like AI,
+courses taken at university.
+Previous work experience,
+system designing.
+Speaker 2
+18:34:00
+Yeah,
+I could add something here.
+So the data structures and algorithms part,
+please,
+please,
+please focus on those data structures and algorithms.
+Definitely,
+definitely get those done.
+But more than that.
+So system design is pretty useful,
+especially with AI being the way it is nowadays.
+Um…
+I imagine you can code up this whole thing,
+but now we have to look at the bigger picture,
+so system design is really helpful there,
+but don't… definitely data structure and algorithms,
+that's,
+like,
+number one.
+Speaker 3
+18:34:34
+Yeah,
+I'd say that outside of,
+like,
+the core classes,
+you know,
+like data structures,
+algorithms,
+system design,
+like computer systems and stuff like that.
+Um,
+you can't really predict,
+like,
+what you're gonna be working on,
+so you're saying,
+like,
+oh,
+I,
+like,
+need to take all these hardware classes,
+or I need to take all these operating system classes,
+unless you're,
+like,
+certain 100% you'll only be applying to those types of jobs.
+I took a ton of different classes in school,
+some of them.
+were applicable to my work,
+some of them weren't,
+but I do think that's something like college is only four years,
+as Jonathan said,
+so take what you want.
+Okay.
+Speaker 1
+18:35:08
+Great.
+So the next question is from Mihak and Arjan.
+And they asked,
+what specific programming languages or technical stacks should early career applicants focus on for the technical interviews?
+Toby or Jonathan?
+Speaker 3
+18:35:24
+Uh,
+like I said in my part about the interview,
+I think you should pick something that you're good at.
+I think,
+like,
+Python,
+JavaScript,
+a lot of those are…
+Relatively simpler languages and easy to convert from pseudocode to actual code.
+I did my interview in Python.
+That's just me.
+Speaker 2
+18:35:46
+Yeah,
+something to add here is when you go through the team matching process at Google,
+like,
+a lot of these,
+what stack or what language is,
+like,
+unique to the specific teams,
+so…
+I wouldn't say there's like one specific language or one specific stack,
+more of just like figure out what works for you and there's a team out there that's like working with your stack most likely.
+Speaker 1
+18:36:10
+Okay.
+Next question is from Tushar and Harsh.
+How much emphasis is placed on competitive programming,
+like LeetCode,
+versus personal projects and GPA during the initial interview stages?
+Speaker 3
+18:36:30
+I guess by the time you make it to a technical interview,
+right,
+you're…
+That's,
+like,
+you're doing your leak code problem,
+and I think that.
+The personal products and GPA stuff on your resume comes before getting to the interview stage.
+Speaker 1
+18:36:45
+Yeah,
+I can add a little bit of color,
+too,
+as a recruiter.
+Um,
+you know,
+I think that being technically ready for your interviews is going to be very important,
+um,
+for any technical role.
+Uh,
+but,
+you know.
+Your application is a holistic.
+document,
+right?
+So definitely include your personal projects and GPA in your resume.
+And that is certainly important.
+But like Toby mentioned,
+it's they're all important.
+And they're important at different parts of the stage or different.
+parts of the process.
+So,
+um,
+for sure,
+study,
+do well in your coursework,
+have those personal projects,
+and I think all of those go a very long way in creating that really holistic,
+strong application.
+So we'll move on to the next question,
+um,
+from Anjali and Rohit.
+Uh,
+are there specific programs or roles available for master's or PhD students,
+or are these just restricted to bachelor's students?
+I can take this one,
+too,
+as the recruiter.
+Some roles will have different job postings based on the degree program.
+So make sure to apply for the correct one.
+If you have just completed your bachelor's or master's.
+don't apply to a PhD program,
+as you will not be considered for that role.
+Uh,
+so you just need to be on the lookout to see if that job posting specifically does have the degree requirement listed.
+Next,
+Fanshika and Aniruddha asked,
+are students graduating in late 2026 or early 2027 eligible for the 2027 new grad roles?
+I'll also take this one.
+Yes,
+in order to be eligible for our early career roles,
+you must be able to start full time in summer of 2027.
+So December 2026 grads would be eligible to apply for these early career roles.
+Okay,
+next question is from Suhas.
+Jonathan and Toby,
+is there anything you wish you would have done differently in college?
+Or do you have any advice for your past self in terms of career?
+Speaker 2
+18:39:08
+Uh,
+yeah,
+I can… I can speak to this a little bit.
+So,
+if I could go,
+like,
+back in time,
+I would probably take,
+like,
+my public speaking course,
+like,
+a little more seriously,
+and,
+like,
+some of these other things that turn out to be really useful in the workplace.
+Um,
+some of these more,
+like,
+communications classes probably would have taken them a little more seriously.
+Speaker 3
+18:39:29
+I think I would have pushed myself a little harder in college.
+I think there were some semesters where I could have taken a couple,
+like a different class or I was like,
+oh,
+this is too hard.
+And I pushed it to something else or picked up another project or personal thing.
+I think that,
+you know,
+there's…
+Definitely that college is only four years,
+like I said,
+so important to take advantage of all the opportunities that you're given there.
+Speaker 1
+18:39:57
+The next question is,
+what will make a profile stand out enough for an interview?
+And I can also take this one.
+I think that's a tricky question because there are so many parts that are important.
+for an application,
+right?
+Definitely put in a lot of time for your resume.
+have a friend review it,
+go to your career center at school,
+make sure that you have a lot of eyes on it,
+and make edits.
+I think,
+again,
+the resume is typically what we see first,
+so you want it to be pretty close to perfect.
+Um…
+And then,
+you know,
+be a part of your community at your university.
+Join clubs and organizations that show your leadership and dedication to the field.
+Be dedicated to your classes,
+um,
+make sure that you're paying attention,
+like Jonathan and Toby said,
+uh,
+data structures and algorithms,
+very,
+very,
+very important,
+so make sure that you are,
+um,
+again,
+dedicated in your coursework.
+And of course,
+just ensure that your resume and application is unique to you.
+Make sure that you're adding anything there that — any accomplishments that you have that are unique to your candidacy.
+see what is,
+you know,
+unique to your profile,
+not just generic to everybody.
+Jonathan,
+Toby,
+do you have anything to add there that was helpful while you were applying and helped you get an interview?
+If not,
+we can move to the next question.
+Speaker 3
+18:41:42
+I don't know.
+They don't tell me after the fact that it wasn't good.
+Speaker 1
+18:41:48
+Sure.
+We can move on to the next question.
+Looking back,
+is there one technical skill or habit from college that's been surprisingly useful in your daily work?
+Speaker 3
+18:42:02
+I think for me,
+uh,
+skill I developed in college,
+I was a collegiate athlete,
+I was a swimmer in college,
+so we had practice in the morning,
+we had practice after.
+So time management was very important,
+and I think that.
+time management and being able to,
+like,
+compartmentalize and context switch has been very useful in my daily work.
+Some days can be pretty hectic,
+there's multiple different projects going on,
+and being able to switch between and map out time and,
+like,
+wake up early and make sure I get everything I need to get done.
+That kind of discipline has been pretty useful.
+Speaker 1
+18:42:39
+Next question is,
+what's your favorite part about your job?
+Speaker 3
+18:42:49
+I think for me,
+uh,
+my favorite part of my job is just being able to be… feel like I'm,
+like,
+on the cutting edge of,
+like,
+some weird AI gold race,
+space race.
+hopefully not a bubble,
+but working with seeing,
+like,
+all the customers that come in on Google Cloud,
+and seeing,
+like,
+oh,
+this is,
+like,
+a preview from NVIDIA for this GPU,
+and,
+like,
+this is,
+like,
+the first machine that Google's getting,
+and we're able to work on that,
+and that's something that,
+like,
+I'm integrating to my stack,
+and something that I'm working and testing on.
+I think that's super interesting,
+learning more about…
+kind of the underlying AI infrastructure while using the AI models.
+Speaker 2
+18:43:28
+Yeah,
+for… for me,
+I think it's the fact that I get to go home,
+visit my family,
+and then see them using YouTube on the TV.
+You know,
+sometimes they're like,
+hey,
+can you fix this?
+You know,
+maybe something like that,
+but just something that,
+like.
+People I know get to use and I'm working on it.
+Very exciting.
+Speaker 1
+18:43:47
+Yeah,
+for sure.
+I think that is something really unique about working at Google is,
+um,
+all of the amazing products that we have and,
+um,
+that your friends and family use.
+Very true.
+Um,
+alright,
+next question is,
+how are AI tools being used in day-to-day by various teams in Google Workspace?
+In the Google Workspace.
+Speaker 2
+18:44:17
+Yeah,
+I could quickly add something here.
+From at least here at YouTube,
+it really varies team by team,
+and probably is also going to vary throughout Google as well.
+But,
+uh,
+we do have a lot of AI tools.
+So,
+like,
+our daily development environment,
+our IDE,
+AI is very integrated into this,
+somewhat similar to,
+like,
+a lot of these.
+IDEs that a lot of people are using currently.
+Um,
+but I would say it's…
+You know,
+it's starting to touch all the tools,
+right?
+So that's how I'd answer that.
+Speaker 3
+18:44:52
+Yeah,
+everything is becoming AI.
+I use the internal AI to ask questions all the time,
+coding and working on integrating AI into our own tools we're building.
+like I mentioned,
+we're building,
+like,
+an AI test failure aggregator,
+I'm working on building an AI log analyzer,
+all those sorts of things where we're being asked to use.
+AI models to make our work easier.
+And I feel like it definitely has.
+Speaker 1
+18:45:20
+Yeah,
+very exciting time for sure.
+And we have one final question that we're going to be answering today.
+And it's very important,
+which is,
+how will we know when the roles are posted?
+You can set up job alerts on the career site for Early Career and/or Catalyst and update your Google Careers profile today with your summer plans so that you can just hit submit when the time comes.
+Again,
+the timeline for those roles can be quite brief.
+Creating that job alert is going to be your best bet to be notified as soon as it's posted.
+Um,
+like I mentioned earlier,
+the AI Career Catalyst program will open this summer,
+and the early career and software engineer role will be open in the fall.
+But still set up the alert.
+You don't want to miss it.
+Okay,
+well,
+that is all that we have time for today.
+I just want to thank you all for joining.
+Um,
+I also want to plug,
+again,
+for you to update or create your Google Career Profile.
+You know,
+I've said it a few times already,
+but I cannot emphasize how important it is to have that updated.
+I also want to give a massive thank you to Jonathan and Toby for your time and for all of your thoughtful insights.
+I found them very helpful.
+I'm sure our audience has also found them very helpful.
+Thank you,
+thank you,
+thank you.
+Um,
+if you want to stay connected,
+don't forget to visit google.com slash students,
+and please continue registering for our on-demand and upcoming events with Google Careers on Air at.
+g.co/careersonair.
+Thank you again for tuning in today.

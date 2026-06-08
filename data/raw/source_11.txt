@@ -1,0 +1,284 @@
+Skip to content
+Jose-Gael-Cruz-Lopez
+underclassmen-opportunities
+Repository navigation
+Code
+Issues
+6
+ (6)
+Pull requests
+1
+ (1)
+Agents
+Actions
+Projects
+Security and quality
+Insights
+Owner avatar
+underclassmen-opportunities
+Public
+Jose-Gael-Cruz-Lopez/underclassmen-opportunities
+Go to file
+t
+T
+Name		
+github-actions[bot]
+github-actions[bot]
+chore: update closing-soon badges (1 changes)
+e895b91
+ · 
+6 hours ago
+.github
+chore(listings): align White House HBCU Scholars URL with README
+yesterday
+web
+feat: add Next.js web frontend in /web (searchable, filterable browser)
+last month
+.gitignore
+feat: add weekly digest action - posts new + closing-soon opportuniti…
+last month
+ARCHIVE.md
+chore: archive HBCUniverse Campus Ambassadors 2026
+yesterday
+CONTRIBUTING.md
+fix: changed classification typo
+2 months ago
+Contributor_Guide.pdf
+Add Contributor Guide PDF for onboarding new contributors
+2 months ago
+OPENCLAWS_PROMPT.md
+Add comprehensive OpenClaws prompt for bug fixes and project finaliza…
+4 months ago
+README.md
+chore: update closing-soon badges (1 changes)
+6 hours ago
+Repository files navigation
+README
+Contributing
+🌱 Underclassmen Opportunities
+The only opportunity list built for college freshmen & sophomores.
+Stars Last Updated Contributors Open Issues oosmetrics
+
+banner
+Important
+
+The only curated opportunity list built exclusively for college freshmen & sophomores (Class of 2028–2030). Most internship boards ignore you until junior year. This one doesn't.
+
+Hi, I'm Jose Cruz. I built this because I couldn't find a single resource that actually spoke to freshmen and sophomores — every list assumed you already had experience, already knew companies, already knew where to look. This one starts from zero.
+
+Internships, fellowships, research programs, scholarships, summits — everything here is specifically designed for first and second-year students. No experience required. No junior-year gatekeeping.
+
+This is community-driven. If you find something, add it. Together we make the path clearer for everyone who comes after us.
+
+To contribute — it takes 60 seconds:
+
+Open an issue and paste the opportunity URL
+A maintainer approves it
+It gets automatically added to the list
+Warning
+
+This list is exclusively for underclassmen-targeted programs (freshmen/sophomore focus). For general internships open to all years, see Summer2026-Internships.
+
+Table of Contents
+Underclassmen Internships
+Underclassmen Programs
+Underclassmen Research Programs
+Scholarships
+HBCU Opportunities
+Women in Tech Opportunities
+Rising Freshmen & Class of 2030 Opportunities
+State-Based Scholarships & Grants
+Resources for Underclassmen
+Contributing
+Acknowledgements
+Underclassmen Internships
+banner
+
+Status	Company	Role	Location	Application	Date Posted
+🔥 [CLOSING SOON]	Apple	Software Undergrad Engineering Internships (Fall / Winter / Spring / Summer 2027) — Deadline: Rolling	Various Locations within United States	Apply	May 28, 2026
+🔥 [CLOSING SOON]	Apple	Machine Learning & AI Undergrad Internships (Fall / Winter / Spring / Summer 2027) — Deadline: Rolling	Various Locations within United States	Apply	May 28, 2026
+Underclassmen Programs (Fellowships, Externships, etc.)
+image
+Status	Company	Program	Type	Location	Application	Date Posted
+🔥 [CLOSING SOON]	Neo	Neo Scholars — Deadline: June 14, 2026 (Rolling Admission)	CS Undergrad Program (Open to Undergrads Who Excel at CS)	San Francisco, CA / Remote	Apply	May 28, 2026
+🔥 [CLOSING SOON]	PwC	PwC AI Externships — Deadline: Rolling	Project-Based Externship via Extern.com (Portfolio + Resume Building; AI Tools)	Remote	Apply	May 28, 2026
+🔥 [CLOSING SOON]	Databricks	Databricks Student Fellows Program — Deadline: Check site	Student Fellowship (Data + AI; High-Demand Skills Development; Open to Undergrads)	Remote	Apply	May 28, 2026
+🔥 [CLOSING SOON]	Five Rings LLC	LINK 2026 — Software Development Intensive — Deadline: Check site (Event: Aug 10–14, 2026)	5-Day Intensive (Current Sophomores Only)	New York, NY	Apply	May 28, 2026
+🔥 [CLOSING SOON]	Salesforce	AI Builder, Emerging Talent (Futureforce) — Deadline: Check site	Emerging Talent Program (Undergrads; Futureforce University Recruiting)	Multiple Locations	Apply	May 28, 2026
+🔥 [CLOSING SOON]	Out in Tech	Out in Tech U Launch Lab — Deadline: Rolling	Free 5-Session Virtual Cohort (LGBTQ+; Ages 18–25; Leadership + Mentorship; No Prior Experience Required)	Virtual	Apply	May 28, 2026
+✅ [OPEN]	Kaggle / Google	Kaggle GenAI Intensive: Vibe Coding — Deadline: Check site (Event: Jun 15–19, 2026)	Free Online Course (AI Agents; Vibe Coding; Open to All; No Prior Experience Required)	Remote	Apply	May 01, 2026
+🔥 [CLOSING SOON]	Paradigm	Paradigm Fellowship 2026 — Deadline: June 8, 2026 (Event: Aug 12–15, 2026)	4-Day Retreat (Undergrads / Early Career Builders; Technical; Travel + Lodging + Meals Covered)	Northern California	Apply	May 01, 2026
+✅ [OPEN]	SHPE	2026 SHPE National Convention — Deadline: Check site (Event: Oct 28–31, 2026)	Career Convention (Hispanic Engineering Students; Travel Assistance Available)	Indianapolis, IN	Apply	May 01, 2026
+✅ [OPEN]	ElevenLabs	ElevenLabs Ambassador Program — Deadline: Rolling	Ambassador Program (Community Builder / Content Creator; 18+; Platform Credits + Event Funding; Paid Opportunities Unlock Over Time)	Remote / Global	Apply	May 01, 2026
+✅ [OPEN]	CodeDay	ToorCamp 2026 — Deadline: Check site (Event: Jun 24–28, 2026)	Hacker Convention / Tech Camp (Free Tickets; Most Applicants Accepted; Travel Support Available Outside Seattle; Meals Covered)	Orcas Island, WA	Apply	May 01, 2026
+✅ [OPEN]	Wells Fargo	2026 ChangeMakers Summit — Deadline: Check site (Event: Sep 22–24, 2026)	Leadership Summit (Class of 2028; Bachelor's Degree; US Work Authorized; No Visa Sponsorship)	Charlotte, NC	Apply	May 01, 2026
+✅ [OPEN]	Meta	Meta Career Programs: Virtual Learning Series 2026 — Deadline: Check site	Virtual Learning Series (All Classifications)	Virtual	Apply	Apr 21, 2026
+✅ [OPEN]	Microsoft	Microsoft Learn Student Ambassadors — Deadline: Rolling	Ambassador / Leadership Program (Any Major; 16+; All Disciplines)	Global / Campus	Apply	Apr 19, 2026
+✅ [OPEN]	Capital One	Product Summit (Summer 2026) — Deadline: Check site	Virtual Summit (Freshmen/Sophomores)	Virtual	Apply	Apr 16, 2026
+✅ [OPEN]	ServiceNow	Externship Program 2026 — Deadline: Check site	Externship	Multiple Locations	Apply	Apr 14, 2026
+✅ [OPEN]	GirlScript Foundation	GSSoC 2026 - GirlScript Summer of Code — Deadline: Check site	Open Source Program	Remote	Apply	Apr 11, 2026
+✅ [OPEN]	Royal Caribbean	Early Career Immersion Program — Deadline: Check site	Immersion Program	Miami, FL	Apply	Apr 07, 2026
+✅ [OPEN]	Handshake	AI Fellowship Program — Deadline: Check site	Fellowship	Remote	Apply	Apr 06, 2026
+✅ [OPEN]	WomenHack	Women in Tech Career Fair — Deadline: Varies per event	Career Fair	Multiple US Cities	Apply	Mar 20, 2026
+✅ [OPEN]	GirlsWhoML	Thinking About Thinking 2026 Ambassador Programme — Deadline: Check site	Ambassador Programme	London, UK	Apply	Feb 04, 2026
+✅ [OPEN]	Y Combinator	Startup School 2026 — Deadline: July 25–26, 2026 (In-Person SF)	Online Course + Event	San Francisco, CA / Remote	Apply	Apr 08, 2026
+✅ [OPEN]	NSN (National Sales Network)	2026 NSN Student Sales & Marketing Conference — Deadline: Rolling (Event: Sep 12–14, 2026)	Conference (All-Expenses-Paid; Diverse Undergrad/Grad; Sales & Marketing)	Atlanta, GA (Loews Hotel)	Apply	Apr 06, 2026
+✅ [OPEN]	MLH (Major League Hacking)	MLH Fellowship — Deadline: Rolling (Summer Batch: May 18–Aug 7, 2026)	Fellowship	Remote	Apply	Mar 27, 2026
+Underclassmen Research Programs
+image
+Status	University/Organization	Program	Field	Location	Application	Date Posted
+🔥 [CLOSING SOON]	Carnegie Mellon University	CMU Quantum Summer Academy — Deadline: Check site (Flyer)	Quantum Computing / Research Academy (Undergrads)	Pittsburgh, PA	Apply	May 28, 2026
+✅ [OPEN]	UMass Amherst	QNumerics 2026: Numerical Methods in Quantum Information Science — Deadline: Check site (Jun 21–27, 2026)	Quantum Information Science / Computational Skills (Undergrads Admitted Case-by-Case; Free for Undergrads)	Amherst, MA	Apply	May 01, 2026
+Scholarships
+image
+Status	Organization	Scholarship	Amount	Application	Deadline
+✅ [OPEN]	Women & Hi Tech	Leading Light Awards Scholarships (Women in STEM; HS Seniors / Undergrads / Grads; Indiana-based or Attending Indiana School)	$1,000–$5,000 (Multiple Awards; $50K+ Total Pool)	Apply	July 5, 2026
+✅ [OPEN]	MPOWER Financing	MPOWER Global Citizen Scholarship	$1,000 - $8,000	Apply	August 31, 2026
+✅ [OPEN]	Last Mile Education Fund x Microsoft	Microsoft Cybersecurity Scholarship	Varies	Apply	Rolling
+✅ [OPEN]	Last Mile Education Fund	Last Mile Fund	Up to $10,000	Apply	Rolling
+✅ [OPEN]	Apex Hosting	Minecraft Scholarship (HS/College; 3.0+ GPA; 500-word essay)	$2,000 (annual)	Apply	July 31, 2026
+✅ [OPEN]	Unigo	Make Me Laugh Scholarship (Age 14+; 250-word humorous essay)	$1,500	Apply	August 31, 2026
+✅ [OPEN]	Cirkled In	No Sweat Scholarship (Age 12+; No Essay)	$2,500	Apply	Monthly drawings
+✅ [OPEN]	Niche	$2,000 No-Essay Scholarship (Age 16+; HS Jr/Sr or College)	$2,000	Apply	Monthly drawings
+✅ [OPEN]	Bold.org	"Be Bold" No-Essay Scholarship (Age 13+; Boldest Profile)	$25,000	Apply	Monthly drawings
+⏳ [OPENS SOON]	Point Foundation	Point Flagship Scholarship (LGBTQ+; Full-Time Undergrad/Grad)	~$10,000/yr (renewable up to 4 yrs)	Apply	November 20, 2026 (Opens September 10, 2026)
+✅ [OPEN]	Unigo	Zombie Apocalypse Scholarship (Age 13+; Survival-Group Essay; 250-Word Plan)	$2,000	Apply	October 31, 2026
+HBCU Opportunities
+image
+Opportunities specifically designed for students attending Historically Black Colleges & Universities (HBCUs), Thurgood Marshall College Fund (TMCF) member institutions, and programs with a strong HBCU recruiting focus.
+
+Status	Organization	Opportunity	Type	Location	Application	Date Posted
+✅ [OPEN]	UNCF	UNCF General Scholarship (African American / Hispanic / Native American; 2.5+ GPA) — Deadline: Rolling (2026-27 cycle, typical March 31)	Scholarship Hub ($2.5K–$12.5K; ~$100M/yr)	Remote	Apply	Apr 19, 2026
+✅ [OPEN]	Thurgood Marshall College Fund	TMCF Hennessy Fellows Program - Cohort 8 (2026) — Deadline: Check site	Fellowship (Graduating Seniors & MBA)	HBCU-Affiliated	Apply	Apr 15, 2026
+⏳ [OPENS SOON]	White House Initiative on HBCUs	White House HBCU Scholars Program (All Majors) — "Application Coming 2026"	Recognition / Fellowship	Remote	Apply	Apr 15, 2026
+✅ [OPEN]	UNCF	UNCF Scholarships Portal (All Majors — STEM, Business, Arts, Humanities) — Deadline: Rolling	Scholarship Hub (Rolling; STEM up to $25K open for 2026-27)	Remote	Apply	Apr 15, 2026
+Women in Tech Opportunities
+image
+Opportunities that are exclusively for (or strongly focused on) women, non-binary, and gender-minority students in tech, engineering, and related fields.
+
+Status	Organization	Opportunity	Type	Location	Application	Date Posted
+✅ [OPEN]	GirlScript Foundation	GSSoC 2026 - GirlScript Summer of Code — Deadline: Check site	Open Source Program (Women-Led; Gender-Inclusive)	Remote	Apply	Apr 11, 2026
+✅ [OPEN]	WomenHack	Women in Tech Career Fair — Deadline: Varies per event	Career Fair	Multiple US Cities	Apply	Mar 20, 2026
+✅ [OPEN]	GirlsWhoML	Thinking About Thinking 2026 Ambassador Programme — Deadline: Check site	Ambassador Programme	London, UK	Apply	Feb 04, 2026
+✅ [OPEN]	Jane Street	INSIGHT — Deadline: Sign Up to Be Notified	Multi-Day Program (Women / Trans / Gender-Expansive; Finance + Tech; Travel + Stipend Covered)	Multiple Locations	Apply	Apr 19, 2026
+✅ [OPEN]	Jane Street	WiSE - Women in Science & Engineering — Deadline: Rolling (Sign Up to Be Notified)	Program (Rising Freshmen Women; Travel + Stipend Covered)	New York, NY	Apply	Apr 16, 2026
+✅ [OPEN]	AAUW	AAUW Local Branch Undergraduate Scholarships (All Majors) — Deadline: Rolling by local branch	Scholarship (Rolling)	Multiple Locations	Apply	Apr 15, 2026
+Rising Freshmen & Class of 2030 Opportunities
+image
+Opportunities open to rising freshmen (Class of 2030) — high school seniors preparing to start college in Fall 2026 — as well as students admitted for future cycles. If you're breaking into tech before day one on campus, start here.
+
+Status	Organization	Opportunity	Type	Location	Application	Deadline
+🔥 [CLOSING SOON]	Duck Brand	Stuck at Prom Scholarship (Ages 14+; HS/Home-School; Duct-Tape Prom Attire)	Contest ($1,000–$10,000; up to $15K total)	US (excl. MD/CO/NE/ND) + Canada (excl. QC)	Apply	June 3, 2026
+✅ [OPEN]	Posse Foundation	Posse Scholarship (Nomination-Based; Partner Cities)	Full-Tuition Scholarship (4 yrs, Partner Colleges)	Atlanta / Boston / Chicago / DC / Houston / LA / Miami / NOLA / NYC / more	Apply	Rolling by city (typically Jan–Feb)
+✅ [OPEN]	National Merit Scholarship Corporation	National Merit Scholarship (PSAT/NMSQT Junior Year)	Scholarship ($2,500 + corporate/college awards up to full tuition)	Remote	Apply	PSAT taken October annually
+⏳ [OPENS SOON]	Jane Street	WiSE - Women in Science & Engineering (Class of 2030)	Program for Incoming Freshmen Women (Travel + Stipend Covered)	New York, NY	Apply	Rolling (Sign Up to Be Notified)
+✅ [OPEN]	Ayn Rand Institute	Fountainhead Essay Contest (Grades 11–12) — Deadline: Sep 13, 2026 (Anthem contest closed May 31, 2026)	Essay Contest (Up to $25,000)	Remote	Apply	September 13, 2026
+⏳ [OPENS SOON]	Regeneron / Society for Science	Regeneron Science Talent Search (HS Senior STEM Research)	Research Competition (300 scholars, $2K–$250K)	Washington, DC (Finalists)	Apply	Reopens June 1, 2026
+⏳ [OPENS SOON]	Gates Foundation	The Gates Scholarship (Low-Income Minority HS Seniors)	Last-Dollar Full Cost of Attendance (~300 Scholars)	Remote	Apply	September 15, 2026 (Opens July 15, 2026)
+⏳ [OPENS SOON]	QuestBridge	National College Match (HS Senior; Low-Income)	Full 4-Year Scholarship to 55 Partner Colleges ($325K+)	Partner Colleges Nationwide	Apply	September 30, 2026 (Opens late summer 2026)
+⏳ [OPENS SOON]	Coca-Cola Scholars Foundation	Coca-Cola Scholars Program (HS Senior; 3.0+ GPA)	Scholarship (150 × $20,000)	Remote	Apply	September 30, 2026 (Opens August 1, 2026)
+⚠️ Note: If you're a current high school senior (Class of 2030 college graduation), many of these scholarships are time-sensitive — check the deadline before applying. Most "rising freshmen" programs (like Deloitte Compass) require you to be admitted to a college and have an anticipated graduation year matching their target.
+
+State-Based Scholarships & Grants
+State-specific scholarships, grants, and aid programs for underclassmen and rising freshmen. Most are residency-based — you must be a resident of the listed state (or its HS/college system) to qualify. Filing the FAFSA (or the state equivalent like TASFA, WASFA, CADAA, ORSAA) is typically required.
+
+💡 Many state grants are first-come, first-served or have limited funds — file your FAFSA as early as possible after it opens each October.
+
+Status	State	Program	Award	Eligibility	Application	Deadline
+✅ [OPEN]	Alabama	ACHE Educational Grants Program	Up to $3,000	AL resident; undergrad at eligible AL institution; financial need (FAFSA)	Apply	Varies by school
+✅ [OPEN]	Alaska	Alaska Performance Scholarship (APS)	Up to $4,755/yr	AK HS grad; rigorous curriculum; GPA + test thresholds; AK college	Apply	Priority: June 30, 2026
+✅ [OPEN]	Arizona	Arizona Promise Program	Full tuition + fees (AZ public U)	AZ HS grad; Pell-eligible; 2.5+ GPA; enroll at AZ public U within 12 months	Apply	Priority: April 1, 2026 (via FAFSA)
+✅ [OPEN]	Arkansas	Academic Challenge Scholarship	$1,000–$5,000 over 4 yrs	AR resident; 2.5+ HS GPA OR 19+ ACT / 980+ SAT; eligible AR institution	Apply	July 1, 2026
+✅ [OPEN]	California	Middle Class Scholarship	Covers gap up to total cost minus $7,898	CA resident; family income ≤~$201K; UC/CSU/CA CC Baccalaureate	Apply	Rolling (priority March 2, 2026 passed)
+✅ [OPEN]	Colorado	Colorado Opportunity Scholarship Initiative (COSI)	Varies	CO resident; CO public college; some require community service match	Apply	Rolling (varies by partner)
+✅ [OPEN]	Florida	Bright Futures Scholarship Program	75%–100% of in-state public tuition + fees	FL resident; FAS: 3.5 GPA + 1330 SAT/29 ACT + 100 svc hrs; FMS: 3.0 GPA + 1210 SAT/25 ACT + 75 svc hrs	Apply	August 31, 2026 (for fall)
+✅ [OPEN]	Georgia	HOPE Scholarship & Zell Miller	HOPE: ~$218/credit hr at UGA; Zell Miller: full tuition	GA resident; HOPE: 3.0 HS GPA; Zell Miller: 3.7 GPA + 1200 SAT/26 ACT	Apply	Rolling (via GAfutures)
+✅ [OPEN]	Hawaii	Hawaii Promise Scholarship	Last-dollar aid at UH CCs	HI resident; UH community college ≥half-time; FAFSA-demonstrated unmet need	Apply	FAFSA priority (rolling)
+✅ [OPEN]	Illinois	Monetary Award Program (MAP) Grant	Up to $8,400/yr	IL resident; US citizen/eligible non-citizen; financial need; approved IL college	Apply	Rolling (file FAFSA ASAP — limited funds)
+✅ [OPEN]	Iowa	Iowa Tuition Grant	Up to $7,500/yr	IA resident; eligible IA private 4-yr college; financial need (FAFSA)	Apply	July 1, 2026
+✅ [OPEN]	Kentucky	Kentucky Educational Excellence Scholarship (KEES)	Up to $2,500/yr	KY HS student; earn $ for each year of GPA 2.5+; KY resident; KY institution	Apply	Automatic (earned through HS)
+✅ [OPEN]	Louisiana	TOPS (Taylor Opportunity Program)	Covers tuition at LA public schools (4 tiers)	LA resident; 2.5+ GPA + core curriculum + 20 ACT (Opportunity); higher for Performance/Honors	Apply	July 1 of HS grad year
+✅ [OPEN]	Maine	State of Maine Grant	$2,500	ME resident; undergrad with financial need; eligible institution	Apply	May 1, 2026 (priority)
+✅ [OPEN]	Massachusetts	John and Abigail Adams Scholarship	Tuition credit (~$1,714 at UMass Amherst)	MA resident; Advanced on 1 MCAS section + Proficient on others; top 25% district combined	Apply	Automatic (auto-notified fall of senior year)
+✅ [OPEN]	Michigan	Michigan Achievement Scholarship	Up to $5,500/yr (public U) / $4K (private) / $2.75K (CC); max $27,500	MI HS grad 2023+; MI resident since July 1 prior year; FAFSA SAI ≤$30K; enroll within 15 months	Apply	Rolling (FAFSA-based)
+✅ [OPEN]	Minnesota	Minnesota State Grant	Up to $13,847	MN resident; undergrad at eligible MN school; financial need (FAFSA)	Apply	30 days after term start (rolling)
+✅ [OPEN]	Missouri	Access Missouri Financial Assistance Program	Up to $2,850	MO resident; financial need (FAFSA); eligible MO institution	Apply	Rolling (FAFSA priority Feb 1, 2026)
+✅ [OPEN]	Missouri	Bright Flight Scholarship	Up to $3,000	MO resident; top 3% of ACT/SAT scorers in MO; eligible MO school	Apply	August 1, 2026
+✅ [OPEN]	Nebraska	Nebraska Opportunity Grant	Varies; up to full Pell	NE resident; Pell-eligible; eligible NE institution	Apply	Rolling (FAFSA ASAP — limited funds)
+✅ [OPEN]	Nevada	Governor Guinn Millennium Scholarship	Up to $10,000 over 4 yrs	NV resident; HS grad with 3.25+ GPA; NV HS ≥2 yrs; eligible NV institution	Apply	Automatic (for eligible grads)
+✅ [OPEN]	New Hampshire	Governor's Scholarship Program	$1,000–$2,000/yr for up to 4 yrs	NH HS grad; full-time at NH institution; Pell-eligible + NH Scholar for top tier	Apply	FAFSA-based
+✅ [OPEN]	New Jersey	NJ Tuition Aid Grant (TAG)	Up to full NJ public tuition; partial at private	NJ resident; financial need; full-time at eligible NJ institution	Apply	New: September 15, 2026
+✅ [OPEN]	New Mexico	New Mexico Opportunity Scholarship	Full tuition + fees at NM public schools	NM resident; eligible at public colleges incl. 4-year	Apply	Rolling (FAFSA ASAP)
+✅ [OPEN]	New York	Excelsior Scholarship	Up to full SUNY/CUNY tuition	NY resident; family income ≤$125K; SUNY/CUNY full-time; live+work in NY after grad	Apply	August 31, 2026
+✅ [OPEN]	New York	Tuition Assistance Program (TAP)	$500–$5,665	NY resident; financial need; eligible NY institution	Apply	June 30, 2027 (for 2026-27)
+🔥 [CLOSING SOON]	North Carolina	Next NC Scholarship (formerly NC Education Lottery)	Full CC tuition or $5K at 4-yr	NC resident; FAFSA SAI ≤$15K (2025-26); NC CC or UNC system	Apply	Rolling (UNC priority June 1, 2026 / CC Aug 15)
+✅ [OPEN]	North Dakota	ND State Grant Program	Up to $2,000	ND resident; financial need; eligible ND institution	Apply	Rolling (FAFSA ASAP after Oct 1, 2025)
+✅ [OPEN]	Oregon	Oregon Opportunity Grant	Up to $3,612	OR resident; financial need (FAFSA or ORSAA); eligible OR institution	Apply	Rolling (limited funds)
+✅ [OPEN]	Rhode Island	RI Promise	Last-dollar free tuition at CCRI/RIC	RI resident; HS grad; CCRI (associate) or RIC (bachelor's); full-time within year	Apply	Rolling (varies)
+✅ [OPEN]	South Carolina	LIFE Scholarship	$5K (4-yr) / $3K (2-yr) + $300 book allowance	SC resident; 2 of 3: 3.0+ GPA, top 30% class, 1100 SAT/24 ACT; SC college	Apply	Automatic (for eligible grads)
+✅ [OPEN]	South Dakota	South Dakota Opportunity Scholarship	Up to $7,500 over 4 yrs	SD resident; 3.0+ GPA + 24 ACT; SD opportunity curriculum; SD institution	Apply	Rolling (check site)
+✅ [OPEN]	Tennessee	Tennessee HOPE Scholarship	$1,750–$2,250/sem	TN resident; 3.0+ GPA OR 21 ACT / 1060 SAT; eligible TN institution	Apply	September 1, 2026
+✅ [OPEN]	Texas	TEXAS Grant	Up to full TX public tuition + fees	TX resident; financial need (FAFSA/TASFA); 'Distinguished Level of Achievement' or equiv; TX public	Apply	Rolling (FAFSA priority Jan 15, 2026)
+✅ [OPEN]	Vermont	Vermont Incentive Grant	Up to ~$15,700	VT resident; full-time undergrad; financial need (FAFSA)	Apply	Rolling (apply via MyVSAC)
+✅ [OPEN]	Virginia	Virginia Guaranteed Assistance Program (VGAP) + Commonwealth Award	Up to full tuition + fees	VA resident; VA public college; financial need; 2.5+ GPA (VGAP)	Apply	Rolling (apply via school)
+✅ [OPEN]	Virginia	Virginia Tuition Assistance Grant (VTAG)	Up to $5,000	VA resident; full-time at VA private nonprofit	Apply	July 31, 2026
+✅ [OPEN]	Washington	Washington College Grant (WA Grant)	Up to full WA public tuition + fees	WA resident; family income ≤~70% state median; eligible WA institution	Apply	Rolling (FAFSA or WASFA ASAP)
+✅ [OPEN]	Washington DC	DC Tuition Assistance Grant (DCTAG)	Up to $10,000/yr gap (public out-of-state); $2.5K private/HBCU	DC resident ≥12 months; HS grad; eligible institution	Apply	Priority: June 30, 2026
+✅ [OPEN]	Wisconsin	Wisconsin Higher Education Grant (WHEG)	Up to $3,150	WI resident; financial need; WI public/nonprofit private 4-yr or tech	Apply	Rolling (FAFSA ASAP)
+✅ [OPEN]	Wyoming	Hathaway Scholarship	$840–$1,680/sem (4 tiers)	WY resident; WY HS grad; 2.5–3.5 GPA + 19–25 ACT (tiered); UW or WY CC	Apply	Automatic (for eligible grads)
+✅ [OPEN]	Indiana	21st Century Scholars	Up to 100% tuition at IN public	Apply in 7th–8th grade; IN resident; income-eligible; Scholar Success Program through HS	Apply	June 30, 2026 (8th grade cutoff)
+✅ [OPEN]	Mississippi	Mississippi Tuition Assistance Grant (MTAG)	$500 (fr/so) / $1K (jr/sr)	MS resident; 2.5+ GPA + 15 ACT; eligible MS institution; not full-Pell	Apply	September 15, 2026
+✅ [OPEN]	Oklahoma	Oklahoma's Promise	Tuition at OK public; partial at private	Apply in 8th–10th grade; OK resident; family income ≤$60K; HS curriculum + 2.5 GPA	Apply	June 30, 2026 (encouraged); Dec 31, 2026 (12th grade final)
+⚠️ State aid rules change frequently. Always verify eligibility and deadlines on the official state agency site before applying. Many programs require the FAFSA (or state equivalent) every year, even when the scholarship itself renews automatically.
+
+Resources for Underclassmen
+Interview-Guidance
+Building Projects Without Experience
+LeetCode Beginner Guide
+Archived / Closed Opportunities — past programs that may reopen next cycle
+Contributing
+Please read CONTRIBUTING.md before submitting an opportunity!
+
+We welcome contributions from anyone. If you know of an underclassmen-specific opportunity that isn't listed, please submit an issue.
+
+Acknowledgements
+Inspired by Summer2026-Internships by Vansh and the CSCareers community.
+
+About
+The Underclassmen Opportunities repository is a curated list of internships, programs and resources aimed at freshmen and sophomores in tech‐related majors. The README explains that many companies have early‑career programs that do not require prior experience, and this project aggregates those opportunities for easy discovery.
+
+Topics
+engineering opensource technology software-engineering college opportunities students-resources underclassmen
+Resources
+ Readme
+Contributing
+ Contributing
+ Activity
+Stars
+ 172 stars
+Watchers
+ 11 watching
+Forks
+ 4 forks
+Report repository
+Releases
+No releases published
+Packages
+No packages published
+Contributors
+6
+@Jose-Gael-Cruz-Lopez
+@claude
+@github-actions[bot]
+@actions-user
+@cursoragent
+@AdeoyeStephanie
+Languages
+TypeScript
+95.1%
+ 
+JavaScript
+2.6%
+ 
+CSS
+2.3%

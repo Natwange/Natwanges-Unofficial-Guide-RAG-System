@@ -1,0 +1,137 @@
+Google's AI-Assisted Coding Interview (2026 Guide)
+Google is overhauling its hiring process for software engineers.
+
+AI is at the center of the change.
+
+According to an internal document, Google is piloting a new interview format that allows software engineering candidates to use an approved AI assistant during the coding round.
+
+The pilot targets junior and mid-level roles on select US teams, with plans to expand if it goes well. A Google spokesperson confirmed that candidates in the pilot phase will use the company's own Gemini model as their AI assistant.
+
+Google CEO Sundar Pichai disclosed in an April 22, 2026, blog post that 75% of all new code at Google is now AI-generated and approved by engineers, up from 50% last fall.
+
+Here's what you need to know about the new format, how it compares to similar changes at Meta and Canva, and how you can prep for Google's AI-assisted coding rounds.
+
+✅
+Read more: Complete guide to Google Software Engineering Interviews.
+Google AI Coding Interview
+Google is introducing three major changes to the software engineering interview loop in 2026.
+
+Code comprehension round
+Candidates will analyze an existing codebase during a new "code comprehension" round.
+
+This includes reading, debugging, and optimizing real code with Gemini available as an AI assistant. Interviewers will evaluate "AI fluency, including prompt engineering, output validation, and debugging skills."
+
+The internal document describes the format as "human-led, AI-assisted."
+
+Googleyness and Leadership round
+The long-running "Googleyness and Leadership" interview round, which has traditionally centered on behavioral questions and culture fit, will now include a technical design conversation based on a candidate's prior engineering work.
+
+The round will go beyond focusing on culture and soft skills to probe how candidates think through real engineering decisions.
+
+Open-ended engineering round for junior candidates.
+For earlier-career applicants, Google is replacing one traditional technical interview with a session focused on solving open-ended engineering problems.
+
+Google Coding Round Interview Experiences
+The AI-assisted pilot isn't starting from scratch.
+
+Google has already been moving its coding interviews away from pure DS&A problems and toward code comprehension, debugging, and ambiguous problem-solving.
+
+✅
+Verified: We've spoken to dozens of recent Google candidates about their interviews, and here's what they said.
+L3 New Graduate
+The coding problems are custom, not pulled from an interview database. An L3 new grad candidate told us one of his on-site problems was a single vague sentence:
+
+"Given a string and an integer width, return how many lines you can write the string in."
+
+The interviewer pasted it and said nothing. The point was to see whether the candidate would rush into code or slow down and ask clarifying questions first. He went too fast and had to be given a hint.
+
+"They didn't really care about the solution," the candidate said.
+
+"It seems like they care about giving you a super vague problem and asking, 'What do you do with this?'"
+
+ℹ️
+Read an interview experience from a Google Software Engineer Intern.
+L4 Software Engineer
+An L4 SWE candidate described his phone screen as entirely conversational.
+
+The interviewer opened with "What do you know about algorithms?" and spent the round whiteboarding big-O complexity, deriving merge sort from first principles, then designing a distributed merge sort.
+
+The last 10 minutes were spent scoping requirements for a simple function (snake_case to camelCase), where the interviewer cared more about how the candidate defined edge cases and input formats than the actual code.
+
+This ended up being the candidate's strongest round. His recruiter later told him it produced the most signal precisely because it wasn't rehearsable.
+
+L6 Engineering Manager
+For engineering managers, the code comprehension format is already live.
+
+An L6 EM candidate was given 200+ lines of broken code in a Google Doc. No IDE, no compiler, no AI.
+
+The code had syntax errors, naming convention issues, and logic bugs. He had to read through it, identify the problems, write review comments, and fix the code manually within 45 minutes.
+
+He had previously passed final rounds at Apple (which allowed IDE tools) and Meta (which now offers AI assistants to EM candidates).
+
+What this means
+This is the same "code comprehension" format that the AI round is building on.
+
+The difference is that future candidates will have Gemini available as an assistant. But the core skill being tested stays the same: can you read someone else's code, find what's wrong, and fix it?
+
+Google's problems are more ambiguous and less clearly scoped than what you'll see at other companies. The interviewers are collaborative. They want to see your process, not just your output.
+
+The pattern in interviews is human-led thinking with AI-assisted execution.
+
+ℹ️
+Browse more verified Google interview experiences on Exponent.
+Google vs. Meta's AI-Enabled Interview
+Google isn't the first major tech company to introduce AI-assisted rounds.
+
+Meta began rolling out its AI-enabled coding interview in October 2025.
+
+The AI-enabled round replaced one of two traditional coding rounds at the onsite stage. Candidates still have one classic algorithm interview without AI alongside the new format.
+Candidates work in a CoderPad environment with a three-panel layout: file explorer, code editor, and AI assistant chat window. The AI can respond in the chat panel but cannot directly edit files.
+The session is 60 minutes. Candidates work with a multi-file codebase and progress through phases: bug fixing, core implementation, and optimization.
+Meta offers a choice of AI models candidates can switch between during the interview, including GPT, Claude Sonnet, Claude Haiku, Gemini, and Llama.
+Meta evaluates candidates on four criteria: problem solving, code quality, verification, and communication.
+ℹ️
+Meta lets candidates choose from multiple AI models, while Google's pilot specifically requires Gemini.
+AI Coding Interview Trend
+Google and Meta aren't alone. Canva announced in June 2025 that it now expects candidates for backend, frontend, and machine learning engineering roles to use AI tools like Copilot, Cursor, or Claude during technical interviews.
+
+Canva redesigned its interview questions to be "more complex, ambiguous, and realistic. These are the kind of challenges that require genuine engineering judgment even with AI assistance"
+
+Problems "can't be solved with a single prompt; they require iterative thinking, requirement clarification, and good decision-making."
+
+OpenAI president Greg Brockman said at a Sequoia Capital event that AI coding tools went from writing 20% of code to 80% "over the course of December" alone.
+
+Google AI Coding Interview Prep
+Here's how to get ready, informed by what candidates and industry sources have reported.
+
+Get comfortable with Gemini, specifically.
+Google's pilot uses Gemini as the approved assistant.
+
+Spend time with it on real coding tasks. Practice debugging, code review, and refactoring, so you're not encountering its strengths and limitations for the first time under interview pressure.
+
+Practice code comprehension, not just code writing.
+Google's new round emphasizes reading, debugging, and optimizing existing code, not writing solutions from scratch.
+
+Develop a workflow for AI-assisted debugging.
+Google's interviewers will evaluate prompt engineering, output validation, and debugging skills.
+
+Practice forming hypotheses about bugs, writing targeted prompts, critically evaluating AI responses, and iterating.
+
+The most successful candidates use AI strategically for well-defined subtasks while maintaining control of the overall solution, rather than prompting AI and accepting whatever it generated.
+
+Take ownership of all code.
+Take full responsibility for AI-generated code.
+
+Candidates who appeared to "rely heavily on AI" without demonstrating their own understanding have received negative feedback.
+
+Learn to narrate your process.
+Communication remains a core evaluation criterion.
+
+Practice explaining why you're prompting the AI a certain way, what you expect it to return, and how you're validating the output.
+
+Resources
+Software Engineer Interview Prep
+Recent Google Interview Experiences
+Google SWE Interview Guide
+Google SWE Intern Interview Experience
+Google AI Engineer Interview Experience

@@ -1,0 +1,256 @@
+No
+internship?
+No problem
+The Big Myth
+MYTH
+"No internship = Falling behind"
+Recruiters actually hire for:
+Evidence of skills
+Initiative
+Problem-solving
+Ownership
+Impact
+An internship is just
+ONE way to show these.
+IN THIS SESSION, YOU'LL
+• Understand what recruiters actually value
+(beyond internships)
+• Identify 9 practical ways to build
+experience over the summer
+• Leave with a personalised 8-week action
+plan
+• Learn how to turn summer activities into
+strong CV bullets
+You don't need a company to
+validate your ability.
+9 Powerful Alternatives to Internships
+01
+Build a Project
+02
+Open Source
+03
+Freelance / Micro Work
+04
+Skill Sprint
+05
+Hackathons
+06
+Research / Teaching
+07
+Technical Skills Practice
+08
+Build Your Network
+09
+Career Clarity
+Build a Project
+BUILD SOMETHING REAL
+• Solves a real problem
+• Has users (even 5 counts!
+• Is deployed
+EXAMPLES
+• Budget tracker for students
+• CV feedback tool using AI
+• Website for a local small business
+• Automation tool for a family
+member
+CV TRANSFORMATION FORMULA
+Action Verb + What + Tools + Impact
+"Designed and deployed a full-stack budgeting app used by 35
+students, implementing authentication and REST APIs using React
+and Node.js."
+TIPS
+• Collaborate via the RTC Slack #project channel
+• Document your work on GitHub
+• Deploy it and write about it on LinkedIn
+• Avoid tutorial clones — build something original
+Contribute to Open Source
+WHY IT'S POWERFUL
+• Real-world collaboration experience
+• Code review experience
+• Public proof of skill (visible on GitHub)
+HOW TO START
+• Look for "good first issue" tags
+on GitHub
+• Start with documentation
+improvements
+• Fix small bugs to build
+confidence
+CV LINE EXAMPLE
+"Contributed 12 pull requests to XYZ
+open-source library, improving
+performance by 15%."
+THE FORMULA
+Contributions + Library +
+Measurable Impact
+Even small contributions count. Consistent
+commits over a summer tell a strong story.
+Freelance / Micro Work
+7
+ALTERNATIVE 03
+IDEAS
+• Build websites for local
+businesses
+• Automate spreadsheets
+• Create data dashboards
+• Resume formatting service
+• Tech tutoring
+RECRUITERS LOVE
+• Client communication
+• Managing scope
+• Delivering results on
+deadline
+• Taking ownership
+end-to-end
+CV ANGLE
+"Delivered 3 client web projects
+independently, managing scope,
+deadlines, and client
+communication."
+Skill Sprint
+STRUCTURED LEARNING, NOT PASSIVE WATCHING
+Instead of "learn Python", make it structured:
+• Earn a certification
+• Build 3 projects in one tech stack
+• Complete a 30-day DSA challenge
+• Cloud deployment practice
+• Make it measurable — track progress
+CV ANGLE
+"Completed AWS Cloud Practitioner
+certification and deployed 3 cloud-hosted
+applications using EC2 and S3."
+SPRINT IDEAS
+• AWS / Google Cloud cert
+• Full-stack project in React + Node
+• 30-day LeetCode challenge
+• ML project on Kaggle
+Hackathons & Competitions
+COMPETE AND COLLABORATE
+• Hackathons
+• Kaggle data science competitions
+• Start-up weekends
+• Coding competitions
+SHOWS RECRUITERS
+• Teamwork under pressure
+• Speed and delivery
+• Creativity and initiative
+• Ability to ship fast
+WHERE TO FIND HACKATHONS
+MLH Major League Hacking) lists
+hackathons near you, online and in-person.
+mlh.io
+PRO TIP
+Even participation shows you shipped
+something under a deadline — exactly what
+recruiters want to see.
+Research or Teaching
+ALTERNATIVE 06
+RESEARCH
+• Assist a professor on a
+project
+• Conduct independent
+research
+• Publish or present your
+findings
+• Explore academic or
+industry datasets
+TEACHING
+• Start a coding club
+• Teach coding workshops
+• Tutor peers in technical
+subjects
+• Create tutorials or YouTube
+content
+WHY IT WORKS
+● Demonstrates deep mastery
+● Shows leadership and
+initiative
+● Transferable to any tech role
+● Teaching = the deepest form
+of learning
+ALTERNATIVE 07
+Strengthen Your Technical Skills
+Practise coding challenges consistently throughout the summer using these platforms:
+LeetCode HackerRank CodeSignal Learn TopCoder
+CodeChef FreeCodeCamp CoderByte Geeks4Geeks
+FREE LEETCODE ACCOUNTS!
+We have 65 free 1-year LeetCode subscriptions to give away. Fill in the feedback form at
+the end of this session for your chance to win!
+Build Your Network
+Set up coffee chats with professionals you
+admire
+● Attend tech meetups or virtual events
+● Engage consistently with communities like RTC
+● Reach out to alumni in roles you're curious about
+● Always follow up after making a connection
+RTC has programming all summer including:
+ALTERNATIVE 08
+Build Your Network
+● How to tailor your CV for Tech
+● Live coding interview demos
+● How to build a personal brand
+● And so much more!
+Build Career Clarity
+Work with a mentor
+Gain guidance from someone already in the role you
+want.
+Conduct informational interviews
+Chat with professionals to learn what different roles
+look like day-to-day.
+Explore different tech roles
+SWE, PM, data, design. Know the landscape before
+you commit.
+Research companies
+Understand culture, values, and growth opportunities
+before you apply.
+Reflect on what you enjoy
+Use this time to identify your strengths and what
+energises you.
+What Makes a CV Stand Out?
+RECRUITERS CARE MORE ABOUT
+Impact Ownership
+Depth Proof
+Brand name Shadowing
+Quantity Claims
+WHAT STANDS OUT ON A CV
+• Built something real
+• Solved a real problem
+• Worked with others
+• Shipped something (deployed, live,
+used)
+• Took initiative without being asked
+Ask yourself:
+"What evidence do I have that I can
+solve problems?"
+Build Your Summer Plan
+STEP 1
+Pick 1 Primary Track
+• Project
+• Open source
+• Freelance
+• Skill upgrade
+• Research
+STEP 2
+Add 1 Secondary Boost
+• Hackathon
+• Networking
+• LinkedIn content
+• Technical blog
+STEP 3
+8Week Breakdown
+Follow the plan below to stay
+on track all summer.
+WEEK FOCUS
+Week 1 Define project and scope
+Weeks 23 Build your MVP
+Week 4 Deploy and gather feedback
+Week 5 Improve and add a feature
+Week 6 Write a case study
+Week 7 Apply for autumn roles
+Week 8 Mock interviews
+Final Thoughts
+An internship is not a measure of worth.
+Rejection is about supply and demand, not
+ability.
+Self-directed builders stand out.
+Initiative is rare and powerful.
+View this summer as Founder Mode.

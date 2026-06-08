@@ -10,7 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
-
+I chose the International Student Career Survival Guide as my domain because international students often struggle to find career advice that addresses their specific experiences. Although official resources provide useful information, it is usually spread across multiple websites and focuses more on policies than real-world guidance. In my experience, some of the most helpful advice came from other international students through Reddit, career webinars, and communities such as CodePath, ColorStack, and Rewriting the Code. This project will make that knowledge easier to search and access by bringing it together in one place.
 ---
 
 ## Documents

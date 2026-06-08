@@ -1,0 +1,111 @@
+How to Add Projects to Your Resume (And Actually Get Credit for Them)
+Maybe you didn’t get the internship you wanted (or any internship at all), or you want to pivot to a new role. You look at your resume, and you don’t...
+Maybe you didn’t get the internship you wanted (or any internship at all), or you want to pivot to a new role.
+
+You look at your resume, and you don’t have anything that tells recruiters, “I can do the work that you need me to!”
+
+You aren’t alone in feeling this. It happens a lot.
+
+This is where projects come in. A strong project can carry just as much weight as a job title. But what makes a strong project? How do you choose what to build? And, most importantly, how do you actually list projects on your resume?
+
+Let’s get into it.
+
+What Actually Counts as a Project
+When you’re considering what projects to add to a resume, you have to be clear about what counts and what doesn’t count.
+
+What counts:
+
+Personal projects with real users and/or measurable impact.
+Hackathon projects, even if you didn’t win
+Academic projects, as long as they’re from within a year or so.
+Extensive open source contributions to established projects (not correcting typos)
+Freelance/volunteer/nonprofit work
+Forked projects on GitHub with substantial changes and improvements
+What doesn’t count:
+
+Tutorials or step-by-step instructions
+Undeployed apps
+Generic apps or projects
+Group projects where you cannot define where your work begins and another’s ends
+Projects you can’t talk about in detail
+You want the projects you list on your resume, whether they’re an app, scripts that automate something, analyses, or dashboards (Tableau, Power BI, Jupyter notebooks), or machine learning models, to have shareable output with some evidence that someone else found it useful.
+
+How Do You Choose What to Build for Your Tech Resume?
+Start with two things: a job description for a role you actually want, and a problem you’ve actually experienced. The overlap between those two things is usually where your best project idea lives. That overlap matters because it shows a recruiter you can spot a real problem and build something relevant to solve it, which is exactly what the job asks for.
+
+How to List Projects on Your Resume
+You might be thinking, okay, okay, RTC, I get it: find a job description, find a real problem, build in the overlap. But how do I actually showcase it on my resume?
+
+We got you.
+
+If your projects relate to your role, they should have their own section. Even if it’s just one project, call it out in that specific section. And tie it to the job you want! Make sure it’s clear how they’re connected and, most importantly, showcase the impact.
+
+In our How to Write a Tech Resume article, we share a formula for how to do this:
+
+📌 Resume formula: [Action verb] + [What you did] + [Tech used] + [Measurable result]
+
+Rather than just “I built a thing,” you would say “I built a thing that does X for Y. I used X tech, and this was my result.”
+
+Examples for Projects:
+
+Data / Analytics Analyzed three semesters of dining hall wait time data to identify peak congestion patterns by day and meal period. Used Python (pandas, matplotlib) and a PostgreSQL database. Findings were presented to campus facilities — two dining locations adjusted staffing schedules as a result.
+
+Product / UX Designed and tested a mobile onboarding flow for a campus tutoring app used by 200+ students. Conducted five user interviews, built mid-fidelity prototypes in Figma, and ran A/B tests on two navigation structures. The revised flow reduced drop-off at signup by 30% in a pilot with 60 users.
+
+→ Read: How to Write a Tech Resume
+
+How to Talk About Your Project in an Interview
+When you want to know how to talk about projects in an interview, first make sure you know your project inside and out so you can discuss it on a technical level. You might not be asked about the project by every person interviewing you, but those who do want to know how it connects to the work you’ll be doing for the company, if you get the role, and that you know how to do said work.
+
+So, when a recruiter asks you to talk about it, you should have a pitch prepared. Don’t ramble. Be concrete and clear about what your project is, how it supports the skills you need for the role, and the outcomes/impact.
+
+That’s it.
+
+Don’t go into the weeds unless they ask.
+
+Don’t spend 10 minutes talking about a project unless the recruiter asks follow-ups.
+
+Don’t just recite what’s on your resume; they’ve already read that.
+
+→ Read: How to Message a Recruiter (in case you’re in the application stage)
+
+Your Project Is Your Proof
+Your project is your proof that you can do the work required of you. Now you know what actually counts as a project, how to add projects to a resume, and how to talk to a recruiter about it.
+
+You don’t have to do everything right now to get the project done, either.
+
+Just take one action this week to help yourself build a project for your resume.
+
+That one action could be posting in the RTC #projects channel to see if anyone else is working on projects you could collaborate on, or even just to co-work together.
+
+Another action? Join Rewriting the Code.
+
+We’re a community built to help you in moments like this, when you’re stressed, overwhelmed, or unsure. We’ll be by your side.
+
+Discover more:
+All Resources
+Industry Resources
+Member Resources
+News & Events
+Research & Studies
+Media & Press
+
+Search
+You may also like...
+View all Member Resources resources
+Member Resources
+Individual Contributor vs. Manager: Do You Want to Manage People?
+Figure out if being an Individual Contributor or a Manager is the right path for ...
+
+Read More
+6 min read
+Member Resources
+
+You Can Be a Mom and Work in Tech
+You’ve been thinking about it for months. Maybe longer. What actually happens to your career ...
+
+Read More
+7 min read
+Member Resources
+Career Development in Tech: How to Grow With Intention
+You’re doing the work. Hitting your deadlines. Getting good feedback. But somehow, the promotions aren’t ...

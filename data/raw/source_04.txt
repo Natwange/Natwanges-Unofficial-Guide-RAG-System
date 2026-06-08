@@ -1,0 +1,54 @@
+Want to land a tech internship? A Google engineer explains how networking 'intentionally' can help
+By 
+Sarah Perkel
+Jul 5, 2025, 6:25 AM ET
+
+It's just not enough to cold apply for tech jobs anymore, said Aashna Doshi, a two-time intern turned software engineer at Google. To land a spot at a tech giant, you need to be networking "intentionally."
+
+"Knowing who you want to meet, finding that common bridge between both of you, and then really learning from their experience, was a big game changer for me," Doshi told Business Insider.
+
+Doshi suggests reaching out not only to people whose career paths you'd like to emulate, but also those with whom you share common ground, including similar personal experiences.
+
+"I was talking to a bunch of people, and saw this software engineer who was working out of Europe, and was super inspired by her story," she said. "She was also a woman. I love to see other women in tech and also, she's European. I grew up in Belgium, so that's kind of my connecting point to her."
+
+A foot in the door
+While Doshi ended up getting a referral from the engineer in Europe, she said she wasn't initially thinking of asking for one.
+
+Reaching out because you're genuinely interested in someone's trajectory, she added, has twofold benefits — you're likely to learn more from a less stilted conversation, and the connection you make could last throughout your career.
+
+"I reached out to her to learn more about her story, not like, 'Hey, can I get a referral at Google?'" she said. "I actually didn't even have any intention of asking her for this internship referral, but we became friends and she let me into her life, which is what her day-to-day looks like, how she grows in the role that she's in."
+Remembering that professional connections, like any relationship, are two-way streets, also goes a long way towards helping them endure, Doshi added.
+
+"As we move and progress in our life, the way in which I think about it is, we are collecting people, and we are supporting people," she said. "And the people that will come all the way through will be the ones that you have formed a genuine bond with. If you ask someone for a referral and they give it to you, I mean, that's well and good, but five years down the line, 10 years down the line, they might not even remember who you are."
+
+If you can't get an internship, complete a project
+Since you're likely to be taking similar classes as your competition, it's what you do with that knowledge that can make you stand out, Doshi said.
+
+Projects are the "one thing that I will say again and again and again for any student," she said.
+
+The Google engineer partly credits her success in securing an internship to the projects she developed in her downtime.
+
+"This is the way you can set yourself apart from 1000 other people, because if you take data structures and algorithms, and your peers take data structures and algorithms, you all have the same foundational knowledge that you are building," she told BI. "But what you do with that knowledge, what you do with the data structures and algorithms, really, really makes a difference."
+
+There's no pressure to specialize in a niche skillset right out of the gate to impress potential employers, either, Doshi said. What you're really aiming for is a broad knowledge base and a flexible personality.
+
+"They don't expect you to come in with tons and tons of experience," she said. "They actually care about more — can you think in a specific way, and given a situation changes, are you able to adapt to that? More than doing like 700 LeetCode questions and getting those exactly right, I tried to do more problem solving in adaptive sense."
+
+Becoming a 'go-to' person
+If and when you finally do land an internship, the challenge then becomes securing a full-time return offer.
+
+In Doshi's case, she did her best to become integral to the teams she was placed on — being a point person for a particular issue can help you be more memorable, as well as slowly build a positive reputation with senior employees.
+
+"If they have a bug, and they trust you enough to be like, 'Oh, Aashna, you've done something like this before. Why don't you take this up?'" she said. "That is not just giving you work. It's, 'Oh, we trust you to take something like this up.' So being that person they can trust, being that go-to person, is an absolute game changer."
+
+Doshi also cautions interns against self-isolating. You're not expected to know everything, and shouldn't try to act like you do.
+
+"As an intern, you are coming in with, as everyone knows, less experience than the rest of the team. The intention is to show progress," she said, adding, "The key lies in asking the right questions. A lot of people say there are no wrong questions, etc, etc. Maybe there are no wrong questions, but there are questions that are better than others, in my opinion."
+
+Knowing how to ask for help can be just as important as knowing when — Doshi suggests presenting your questions in a way that shows you've attempted to solve the problem on your own first.
+
+"Do your due diligence before that, which means if you're stuck, ask the right person for help," she said. "I'm going to explain that I already tried to do X, Y, Z, and it didn't work. How do I move forward?"
+
+The goal of an internship is, after all, to absorb as much knowledge as possible. Try to avoid letting your fear of looking lost halt your progress, she added.
+
+"So this kind of framework really accelerated my learnings, because I wasn't wasting hours and hours on something that absolutely I didn't understand or didn't work," she said. "And while I wasn't spending those hours, I still did my due diligence, which is, do my research, look through the code base."

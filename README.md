@@ -25,16 +25,16 @@
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | How I Survived the Toughest Job Market as an International Student | reddit | https://www.reddit.com/r/internships/comments/1jpcszv/how_i_survived_the_toughest_job_market_as_an/ |
+| 2 | Advice for International Students in the US | forum | https://www.wallstreetoasis.com/forum/investment-banking/advice-for-international-students-in-the-us-f-1-visa-opt-cpt-h-1b |
+| 3 | I'm an international student at UNC. Here's how I got an AI summer internship. | article | https://www.businessinsider.com/unc-student-landed-internship-after-changing-major-2026-4 |
+| 4 | Want to land a tech internship? A Google engineer explains how networking 'intentionally' can help | article | https://www.businessinsider.com/google-engineer-advice-internship-tech-job-offer-2025-6 |
+| 5 | No Internship? No Problem | pdf | data/raw/source_05.txt |
+| 6 | How to Add Projects to Your Resume (And Actually Get Credit for Them) | article | https://rewritingthecode.org/resources/member-resources/how-to-add-projects-to-your-resume/ |
+| 7 | Building Confidence: Empower Yourself as a Woman in Tech | article | https://rewritingthecode.org/resources/member-resources/building-confidence-empower-yourself-as-a-woman-in-tech/ |
+| 8 | Google Early Careers Session Notes | txt | data/raw/source_08.txt |
+| 9 | Squarespace Acing Technical Recruitment Info Session | txt | data/raw/source_09.txt |
+| 10 | How to Ace the First 30 Days of Your New Job | article | https://rewritingthecode.org/resources/member-resources/how-to-ace-the-first-30-days/ |
 
 ---
 

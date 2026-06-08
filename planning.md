@@ -43,11 +43,18 @@ I chose the International Student Career Survival Guide as my domain because int
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:**
+**Chunk size: arget ~300 words per chunk (hard cap ~400 words, ≈512 tokens). I split on natural boundaries — paragraph/blank-line breaks for prose, and sentence boundaries where no paragraphs exist — grouping consecutive units until the word budget is reached. Short documents may form a single chunk; long ones are split into several.**
 
-**Overlap:**
+**Overlap: ~60 words (roughly 1–2 sentences) between adjacent chunks. I define overlap by word count rather than "one paragraph" because paragraph lengths vary widely across my sources, and several sources have no paragraph structure at all.**
 
-**Reasoning:**
+**Preprocessing (before chunking): My sources are not uniformly clean prose, so I normalize them first:
+
+Strip boilerplate/navigation text from scraped pages (e.g., the GitHub source had "Skip to content", "Pull requests", "Insights" chrome).
+Rejoin the clause-per-line transcripts (Google and Squarespace info-session notes) into full sentences before chunking, since they contain no blank-line paragraph breaks.
+Collapse slide-deck fragments (the "No Internship? No Problem" PDF) into coherent sentences/bullets.
+Normalize whitespace and remove empty lines.**
+
+**Reasoning: My corpus mixes genuine prose (Reddit posts, forum threads, career articles, ~600–1,300 words each) with two large transcripts (~6,000+ words), a scraped repo page, and slide-deck text. Each prose document covers several subtopics (networking, internships, sponsorship, resumes, interviews), so I chunk by topic-coherent groups rather than a blind character split, keeping related ideas together. Since my two largest sources (the transcripts) have no paragraph breaks, I use a word/token budget as the primary splitter and treat paragraph/sentence boundaries as preferred cut points. This keeps chunks under the 512-token limit of common embedding models so none get silently truncated, and the ~60-word overlap preserves context across boundaries.**
 
 ---
 

@@ -87,9 +87,11 @@ I chose this domain because international students often struggle to find career
      Do not just say "I told it to use the documents" — show the actual instruction or explain
      the mechanism. -->
 
-**System prompt grounding instruction:**
+**System prompt grounding instruction:** The model receives a strict system prompt: *"You are a careers assistant for international students. Answer the user's question using ONLY the information in the provided context documents. Do not use any outside or prior knowledge, and do not guess. If the context does not contain enough information to answer, reply with exactly this sentence and nothing else: 'I don't have enough information on that.' When you use a fact, cite its source id in square brackets, e.g. [source_09]. Be concise and specific."* The retrieved chunks are formatted into a numbered, source-labelled context block (each prefixed with `[source_id] Title`) and passed in the user message, with `temperature=0` for deterministic, context-faithful answers.
 
-**How source attribution is surfaced in the response:**
+Beyond the prompt, grounding is enforced *structurally* by a **relevance gate**: before calling the LLM, the system drops any retrieved chunk whose cosine distance exceeds 0.65, and if no chunk qualifies it returns the decline message **without calling the model at all**. This means an out-of-domain question (e.g. "What is the best recipe for chocolate chip cookies?") cannot be answered from the model's training knowledge — it is declined before generation.
+
+**How source attribution is surfaced in the response:** Attribution is guaranteed **programmatically**, not left to the model. After generation, the system collects the source metadata (`source_id`, title, URL) of the chunks that were actually passed as context, de-duplicates them per document, and returns them as a separate `sources` list that the interface displays under "Retrieved from." The model is *also* asked to cite `[source_id]` inline, but the authoritative source list comes from the retrieval metadata, so attribution holds even if the model omits a citation. When the system declines (no relevant context), the source list is empty.
 
 ---
 
@@ -101,11 +103,11 @@ I chose this domain because international students often struggle to find career
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | What advice did a Squarespace recruiter give students without prior SWE internships who are applying for new grad roles? | Tech-adjacent experience can still be valuable. Projects, hackathons, leadership positions, clubs, and other relevant experiences can help demonstrate skills and initiative. | | | |
-| 2 | What building blocks were recommended for overcoming self-doubt? | Self-awareness, self-trust, resilience, growth mindset, self-compassion, and commitment. | | | |
-| 3 | What resume formula was recommended for writing project bullet points? | [Action Verb] + [What You Did] + [Technology Used] + [Measurable Result] | | | |
-| 4 | What strategies did new graduate software engineers recommend for improving at LeetCode? | Paying attention in data structures and algorithms courses, explaining solutions out loud, doing mock interviews, and comparing brute-force solutions to optimized approaches. | | | |
-| 5 | What are common reasons international students are rejected from internships? | Sponsorship requirements and not meeting job qualifications are frequently cited reasons. | | | |
+| 1 | What advice did a Squarespace recruiter give students without prior SWE internships who are applying for new grad roles? | Tech-adjacent experience can still be valuable. Projects, hackathons, leadership positions, clubs, and other relevant experiences can help demonstrate skills and initiative. | Stand out through projects, clubs, leadership roles, and hackathon experience; include projects on your resume and be able to speak to them. Cites [source_09]. | Relevant (top distance 0.27, correct source) | Accurate |
+| 2 | What building blocks were recommended for overcoming self-doubt? | Self-awareness, self-trust, resilience, growth mindset, self-compassion, and commitment. | Lists all six: self-awareness, self-trust, resilience, growth mindset, self-compassion, commitment. Cites [source_07]. | Relevant (top distance 0.24, correct source) | Accurate |
+| 3 | What resume formula was recommended for writing project bullet points? | [Action Verb] + [What You Did] + [Technology Used] + [Measurable Result] | "[Action verb] + [What you did] + [Tech used] + [Measurable result]." Cites [source_06]. | Relevant (top distance 0.29, correct source) | Accurate |
+| 4 | What strategies did new graduate software engineers recommend for improving at LeetCode? | Paying attention in data structures and algorithms courses, explaining solutions out loud, doing mock interviews, and comparing brute-force solutions to optimized approaches. | Find your best way to learn/retain (reading, writing, implementing, notes); do problems out loud; do mock interviews. Cites [source_09]. Captured "out loud" + "mock interviews" but omitted the DSA-courses and brute-force-vs-optimized points. | Relevant (correct chunk retrieved at rank #2, distance 0.27) | Partially accurate |
+| 5 | What are common reasons international students are rejected from internships? | Sponsorship requirements and not meeting job qualifications are frequently cited reasons. | Sponsorship: students needing sponsorship are considered last, and H-1B sponsorship cost makes employers favor U.S. citizens. Cites [source_01, source_02]. Captured sponsorship strongly but did not mention "not meeting qualifications." | Relevant (top distance 0.26, correct sources) | Partially accurate |
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate
@@ -125,13 +127,13 @@ I chose this domain because international students often struggle to find career
      "The embedding model treated the professor's nickname as out-of-vocabulary and returned
      results from an unrelated review" is an explanation. -->
 
-**Question that failed:**
+**Question that failed:** *"What strategies did new graduate software engineers recommend for improving at LeetCode?"* (Q4 — partially accurate.)
 
-**What the system returned:**
+**What the system returned:** The system answered that you should find your own best way to learn and retain information (one speaker described "reading, writing, implementing" and taking notes), practice problems out loud, and do mock interviews with friends. It captured two of the four expected strategies ("out loud" and "mock interviews") but **omitted** "paying attention in data structures and algorithms courses" and "comparing brute-force solutions to optimized approaches."
 
-**Root cause (tied to a specific pipeline stage):**
+**Root cause (tied to a specific pipeline stage):** This is a **generation-stage (synthesis) failure, not a retrieval failure.** I verified that the chunk containing *all four* expected strategies — `source_09_chunk_006`, which explicitly mentions brute-force vs. optimized, thinking out loud, mock interviews, and DSA coursework — was retrieved at **rank #2 with a low distance of 0.271**, so the correct information was present in the LLM's context. The model nonetheless produced a selective summary: it latched onto one speaker's personal learning anecdote ("reading, writing, implementing") and under-extracted the other concrete tips that were in the same chunk. In other words, retrieval did its job; the LLM's summarization dropped relevant points rather than enumerating them.
 
-**What you would change to fix it:**
+**What you would change to fix it:** (1) Tighten the system prompt to instruct the model to **enumerate all distinct strategies/items found in the context** rather than summarizing, e.g. "List every distinct recommendation present in the context as bullet points." (2) Optionally lower `temperature` is already 0, so instead add a light post-generation completeness check, or (3) for list-style questions, increase `top-k` slightly and ask the model to deduplicate — though since the key chunk was already retrieved, the highest-leverage fix here is the prompt change, not retrieval tuning.
 
 ---
 
@@ -140,9 +142,9 @@ I chose this domain because international students often struggle to find career
 <!-- Reflect on how planning.md shaped your implementation.
      Answer both questions with at least 2–3 sentences each. -->
 
-**One way the spec helped you during implementation:**
+**One way the spec helped you during implementation:** Writing the Chunking Strategy and Retrieval Approach sections in detail *before* coding caught a real bug before it happened. The spec's reasoning about embedding token limits made me realize that the commonly recommended `all-MiniLM-L6-v2` truncates at 256 tokens, which would have silently cut off my ~300-word chunks. Because that reasoning was already written down, the choice to use `bge-small-en-v1.5` (512 tokens) and to cap chunks at ~380 words "with the overlap counted inside the cap" flowed directly into the implementation, and the embedding step worked on the first build with zero chunks over the limit. The spec turned an easy-to-miss silent failure into a deliberate, documented decision.
 
-**One way your implementation diverged from the spec, and why:**
+**One way your implementation diverged from the spec, and why:** My planning.md AI Tool Plan named Claude as the generation LLM, but the implementation uses **Groq's `llama-3.3-70b-versatile`**. I switched because the starter repository was already configured for Groq — `requirements.txt` includes the `groq` client and `.env.example` ships a `GROQ_API_KEY` — and Groq's free tier needs no credit card or rate-limit management, which suited a student project. The grounding logic and prompt are model-agnostic, so the swap required no architectural change. (A smaller divergence: the chunk hard cap moved from the originally written ~400 words to ~380 to leave headroom for overlap under the 512-token limit; I updated planning.md to reflect this.)
 
 ---
 
@@ -157,14 +159,14 @@ I chose this domain because international students often struggle to find career
      chunk_text(). It returned a function using a fixed character split. I overrode the
      chunk size from 500 to 200 because my documents are short reviews, not long guides." -->
 
-**Instance 1**
+**Instance 1 — Ingestion and chunking**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* My planning.md Documents section (the 13 sources and their file types), my full Chunking Strategy section (~300-word target, ~60-word overlap, preprocessing rules), and my pipeline diagram. I asked it to implement a script that loads the documents, cleans them, and chunks them to spec.
+- *What it produced:* `src/ingest.py` with `load_documents()`, a type-aware `preprocess()` (GitHub chrome stripping, transcript/slide line-rejoin, whitespace normalization), and a paragraph-first `chunk_text()` with sentence fallback and word-level overlap.
+- *What I changed or overrode:* I overrode the hard cap from ~400 to ~380 words so that adding the overlap never pushes a chunk past the embedding model's 512-token limit. After reviewing a printed sample I caught two issues the first version missed: leftover Reddit/forum **comment sections** (I removed these from the raw files) and **HTML artifacts** (`</code>`, `&lt;`) in the interview articles, so I had it add a general HTML-tag/entity stripping step (tags removed before unescaping, to protect angle brackets inside code).
 
-**Instance 2**
+**Instance 2 — Embedding, retrieval, and grounded generation**
 
-- *What I gave the AI:*
-- *What it produced:*
-- *What I changed or overrode:*
+- *What I gave the AI:* My planning.md Retrieval Approach section (`bge-small-en-v1.5`, top-k=4, BGE query prefix) and pipeline diagram, plus my grounding requirement (answer from retrieved context only, with programmatic source attribution).
+- *What it produced:* `src/embed.py` (embed chunks into ChromaDB with source metadata), `src/retrieve.py` (top-k retrieval with distances), `src/generate.py` (Groq-backed grounded answering), and a Gradio `app.py`.
+- *What I changed or overrode:* I directed it to make source attribution **programmatic** (built from retrieval metadata) rather than trusting the LLM to cite correctly, and to add a **relevance gate** that declines out-of-domain questions before the LLM is ever called — strengthening grounding beyond the prompt instruction alone.

@@ -15,6 +15,8 @@
      course descriptions don't reflect teaching style, exam difficulty, or workload." -->
 🌍 ✈️ *International Student Career Survival Guide* 🎓 💼
 
+I chose this domain because international students often struggle to find career advice that addresses their specific experiences. Official resources provide useful information, but it is usually spread across multiple websites and focuses more on policies than real-world guidance. In practice, some of the most helpful advice comes from other international students through Reddit, career webinars, and communities such as CodePath, ColorStack, and Rewriting the Code. This project makes that knowledge easier to search and access by bringing it together in one place.
+
 ---
 
 ## Document Sources
@@ -50,13 +52,15 @@
      - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
      - What your final chunk count was across all documents -->
 
-**Chunk size:**
+**Chunk size:** Target ~300 words per chunk, hard cap ~380 words (≈490 tokens). The cap is set below the ~400-word equivalent of bge-small-en-v1.5's 512-token limit, and the ~60-word overlap is counted inside the cap, so no chunk is ever silently truncated at embedding time. I split on natural boundaries — paragraph/blank-line breaks for prose, and sentence boundaries where a document has no paragraphs — packing consecutive units until the word budget is reached. Short documents may form a single chunk; long ones are split into several.
 
-**Overlap:**
+**Overlap:** ~60 words (roughly 1–2 sentences) carried from the tail of the previous chunk into the next. I define overlap by word count rather than "one paragraph" because paragraph lengths vary widely across my sources and several sources have no paragraph structure at all.
 
-**Why these choices fit your documents:**
+**Preprocessing before chunking:** My sources are not uniformly clean prose, so I normalize them first. For every document I strip any leftover HTML tags and unescape HTML entities (e.g. "&lt;", "</code>" left over from the code snippets in the AI-interview articles), stripping tags before unescaping so escaped angle brackets inside code survive. Then I clean by type: strip GitHub navigation/file-listing/footer chrome from the scraped repo page (e.g., "Skip to content", "Pull requests", "Insights"); rejoin the clause-per-line info-session transcripts (Google, Squarespace) into running sentences; collapse the slide-deck PDF ("No Internship? No Problem") fragments into coherent text; and normalize whitespace while preserving real paragraph breaks. (The Reddit/forum comment sections were removed manually from the raw files.)
 
-**Final chunk count:**
+**Why these choices fit your documents:** My corpus mixes genuine prose (Reddit posts, forum threads, career articles, ~600–1,300 words each) with two large transcripts (~6,000+ words), a scraped repo page, and slide-deck text. Each prose document covers several subtopics (networking, internships, sponsorship, resumes, interviews), so chunking by topic-coherent groups keeps related ideas together instead of blending them. Because my two largest sources have no paragraph breaks, a word budget is the primary splitter with paragraph/sentence boundaries as preferred cut points — this works across all document types while keeping every chunk under the embedding model's token limit.
+
+**Final chunk count:** 111 chunks across all 13 documents (min 84 / avg 313 / max 380 words per chunk; 0 chunks over the cap, no empty chunks, no HTML/boilerplate artifacts).
 
 ---
 
@@ -68,9 +72,9 @@
      Consider: context length limits, multilingual support, accuracy on domain-specific text,
      latency, and local vs. API-hosted. -->
 
-**Model used:**
+**Model used:** `bge-small-en-v1.5` via sentence-transformers. I chose it over `all-MiniLM-L6-v2` because MiniLM truncates inputs at 256 tokens, which would silently cut off my ~300-word chunks, whereas bge-small-en-v1.5 supports up to 512 tokens — matching my chunk size — while remaining small, fast, and free to run locally. Both are English-only, which fits my corpus since all 13 sources are in English. Retrieval uses top-k = 4 by cosine similarity, and queries are prefixed with BGE's recommended "Represent this sentence for searching relevant passages:" instruction.
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** If I were deploying this for real users and cost were not a constraint, I would evaluate stronger models such as `bge-large-en-v1.5` for better English retrieval accuracy, or API-hosted models like OpenAI `text-embedding-3-large` and Cohere `embed-v3` for higher accuracy and longer context. Because my users are international students who may search in their first language, I would also consider a multilingual model such as `paraphrase-multilingual-MiniLM-L12-v2`, even though my current sources are all English. For nuanced career advice where the same idea is phrased many different ways, I would likely add a cross-encoder re-ranker (e.g., Cohere Rerank) on top of the initial retrieval. The tradeoffs are increased latency, infrastructure complexity, per-call cost, and sending data off-device, in exchange for more accurate retrieval.
 
 ---
 
@@ -97,11 +101,11 @@
 
 | # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | What advice did a Squarespace recruiter give students without prior SWE internships who are applying for new grad roles? | Tech-adjacent experience can still be valuable. Projects, hackathons, leadership positions, clubs, and other relevant experiences can help demonstrate skills and initiative. | | | |
+| 2 | What building blocks were recommended for overcoming self-doubt? | Self-awareness, self-trust, resilience, growth mindset, self-compassion, and commitment. | | | |
+| 3 | What resume formula was recommended for writing project bullet points? | [Action Verb] + [What You Did] + [Technology Used] + [Measurable Result] | | | |
+| 4 | What strategies did new graduate software engineers recommend for improving at LeetCode? | Paying attention in data structures and algorithms courses, explaining solutions out loud, doing mock interviews, and comparing brute-force solutions to optimized approaches. | | | |
+| 5 | What are common reasons international students are rejected from internships? | Sponsorship requirements and not meeting job qualifications are frequently cited reasons. | | | |
 
 **Retrieval quality:** Relevant / Partially relevant / Off-target  
 **Response accuracy:** Accurate / Partially accurate / Inaccurate

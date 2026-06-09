@@ -38,17 +38,13 @@ I chose the International Student Career Survival Guide as my domain because int
 
 ## Chunking Strategy
 
-<!-- How will you split documents into chunks?
-     State your chunk size (in tokens or characters), overlap size, and explain why those
-     numbers fit the structure of your documents.
-     A review-heavy corpus warrants different chunking than a long FAQ. -->
-
-**Chunk size: arget ~300 words per chunk (hard cap ~400 words, ≈512 tokens). I split on natural boundaries — paragraph/blank-line breaks for prose, and sentence boundaries where no paragraphs exist — grouping consecutive units until the word budget is reached. Short documents may form a single chunk; long ones are split into several.**
+**Chunk size: target ~300 words per chunk (hard cap ~380 words, ≈490 tokens, with the ~60-word overlap counted inside the cap so no chunk exceeds the embedding model’s 512-token limit). I split on natural boundaries — paragraph/blank-line breaks for prose, and sentence boundaries where no paragraphs exist — grouping consecutive units until the word budget is reached. Short documents may form a single chunk; long ones are split into several.**
 
 **Overlap: ~60 words (roughly 1–2 sentences) between adjacent chunks. I define overlap by word count rather than "one paragraph" because paragraph lengths vary widely across my sources, and several sources have no paragraph structure at all.**
 
 **Preprocessing (before chunking): My sources are not uniformly clean prose, so I normalize them first:
 
+Strip any leftover HTML tags and unescape HTML entities (e.g. "&lt;", "</code>" from code snippets in the AI-interview articles), removing tags before unescaping so escaped angle brackets inside code survive.
 Strip boilerplate/navigation text from scraped pages (e.g., the GitHub source had "Skip to content", "Pull requests", "Insights" chrome).
 Rejoin the clause-per-line transcripts (Google and Squarespace info-session notes) into full sentences before chunking, since they contain no blank-line paragraph breaks.
 Collapse slide-deck fragments (the "No Internship? No Problem" PDF) into coherent sentences/bullets.
@@ -66,11 +62,11 @@ Normalize whitespace and remove empty lines.**
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
 
-**Embedding model:**
+**Embedding model: bge-small-en-v1.5 (via sentence-transformers).** I chose this over all-MiniLM-L6-v2 because MiniLM truncates inputs at 256 tokens, which would silently cut off my ~300-word chunks; bge-small-en-v1.5 supports up to 512 tokens, matching my chunk size, while remaining small, fast, and free to run locally. Both are English-only, which fits my corpus since all 13 sources are in English.**
 
-**Top-k:**
+**Top-k: 4. With roughly 50–90 small, topic-coherent chunks in my corpus, retrieving 4 gives the model enough supporting context to answer without flooding the prompt with off-topic chunks. I will revisit this during evaluation and raise it to 5–6 if answers feel under-supported.**
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection: If I were deploying this for real users and cost was not a constraint, I would evaluate stronger models such as bge-large-en-v1.5 for better English retrieval accuracy, or API-hosted models like OpenAI text-embedding-3-large and Cohere embed-v3 for higher accuracy and longer context. Because my users are international students who may search in their first language, I would also consider a multilingual model such as paraphrase-multilingual-MiniLM-L12-v2, even though my current sources are all English. For nuanced career advice where the same idea is phrased many different ways, I would likely add a cross-encoder re-ranker (e.g., Cohere Rerank) on top of the initial retrieval to reorder results by relevance. The tradeoffs are increased latency, infrastructure complexity, per-call cost, and sending data off-device, in exchange for more accurate retrieval.**
 
 ---
 
@@ -83,11 +79,11 @@ Normalize whitespace and remove empty lines.**
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | What advice did a Squarespace recruiter give students without prior SWE internships who are applying for new grad roles? | Tech-adjacent experience can still be valuable. Projects, hackathons, leadership positions, clubs, and other relevant experiences can help demonstrate skills and initiative. |
+| 2 | What building blocks were recommended for overcoming self-doubt? | Self-awareness, self-trust, resilience, growth mindset, self-compassion, and commitment. |
+| 3 | What resume formula was recommended for writing project bullet points? | [Action Verb] + [What You Did] + [Technology Used] + [Measurable Result] |
+| 4 | What strategies did new graduate software engineers recommend for improving at LeetCode? | Paying attention in data structures and algorithms courses, explaining solutions out loud, doing mock interviews, and comparing brute-force solutions to optimized approaches. |
+| 5 | What are common reasons international students are rejected from internships? | Sponsorship requirements and not meeting job qualifications are frequently cited reasons. |
 
 ---
 
@@ -97,9 +93,11 @@ Normalize whitespace and remove empty lines.**
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. **Noisy, inconsistently formatted sources degrading embeddings.** My corpus is not uniform clean prose: the Google and Squarespace info-session notes are transcribed one clause per line with no paragraphs, the "No Internship? No Problem" source is fragmented slide-deck text, and the Underclassmen Opportunities source is a scraped GitHub page full of navigation chrome ("Skip to content", "Pull requests", "Insights"). If my preprocessing doesn't clean and rejoin these properly, chunks will contain broken sentences and boilerplate, which produces weak embeddings and pulls irrelevant chunks into retrieval. Mitigation: the preprocessing step in my Chunking Strategy (strip boilerplate, rejoin clause-per-line transcripts, collapse slide fragments, normalize whitespace) before chunking.
 
-2.
+2. **Key information split across chunk boundaries.** Several of my expected answers are short, self-contained lists or formulas — e.g., the resume bullet formula "[Action Verb] + [What You Did] + [Technology Used] + [Measurable Result]" (Q3) and the six "building blocks for overcoming self-doubt" (Q2). If a chunk boundary falls in the middle of such a list, retrieval may return only half of it and the model will give an incomplete answer. Mitigation: a ~60-word overlap between chunks and preferring sentence/paragraph boundaries as split points, so list items are less likely to be cut apart.
+
+3. **Off-topic retrieval from overlapping subtopics.** Many of my sources cover the same themes (networking, internships, interview prep, resumes), so a query meant for one source can surface a similar-sounding chunk from another — e.g., "What advice did a *Squarespace* recruiter give?" (Q1) could retrieve the *Google* Early Careers session notes instead, since both discuss new-grad hiring advice. This hurts both accuracy and source attribution. Mitigation: keeping chunks topic-coherent, storing source metadata with each chunk so responses can cite the correct document, and revisiting top-k during evaluation if the wrong source is being pulled.
 
 ---
 
@@ -110,6 +108,22 @@ Normalize whitespace and remove empty lines.**
      Label each stage with the tool or library you're using.
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
+
+```mermaid
+flowchart TD
+    A["1. Document Ingestion<br/>13 sources in data/raw/<br/>Python file loader + sources.csv metadata"]
+    B["2. Chunking<br/>preprocess() + chunk_text()<br/>~300 words / ~60-word overlap<br/>paragraph & sentence boundaries"]
+    C["3. Embedding + Vector Store<br/>bge-small-en-v1.5 (sentence-transformers)<br/>stored in ChromaDB with source metadata"]
+    D["4. Retrieval<br/>embed query (BGE 'search' prefix)<br/>top-k = 4, cosine similarity"]
+    E["5. Generation<br/>Claude (grounded prompt)<br/>answer only from retrieved context + cite sources"]
+    Q[/"User question"/]
+    R[/"Answer + source citations"/]
+
+    A --> B --> C --> D --> E --> R
+    Q --> D
+```
+
+Pipeline: **Document Ingestion → Chunking → Embedding + Vector Store → Retrieval → Generation.** The user's question enters at the Retrieval stage, where it is embedded and matched against the stored chunks; the top-k results are passed to Generation, which answers using only that context and cites its sources.
 
 ---
 
@@ -125,8 +139,8 @@ Normalize whitespace and remove empty lines.**
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
      with my specified chunk size and overlap" is a plan. -->
 
-**Milestone 3 — Ingestion and chunking:**
+**Milestone 3 — Ingestion and chunking:** I will use Claude (in Claude Code) for this milestone. *Input:* my Documents table (so it knows the file formats — clean articles, clause-per-line transcripts, slide-fragment PDF, scraped GitHub page) and my full Chunking Strategy section, including the preprocessing rules and the ~300-word target / ~60-word overlap. *Expected output:* a `load_documents()` function that reads each file in `data/raw/` and attaches source metadata (id, title, URL) from `sources.csv`, a `preprocess()` function that strips boilerplate, rejoins clause-per-line transcripts, collapses slide fragments, and normalizes whitespace, and a `chunk_text()` function that splits on paragraph/sentence boundaries up to the word budget with overlap. *Verification:* I will print the chunk count and inspect sample chunks from a transcript (source_08/09), the slide PDF (source_05), and the GitHub page (source_11) to confirm boilerplate is gone, chunks are coherent, and none exceed the ~512-token limit before embedding.
 
-**Milestone 4 — Embedding and retrieval:**
+**Milestone 4 — Embedding and retrieval:** I will use Claude. *Input:* my Retrieval Approach section, specifying `bge-small-en-v1.5` via sentence-transformers, top-k = 4, and the note that BGE benefits from prefixing queries with "Represent this sentence for searching relevant passages:". *Expected output:* an `embed_chunks()` function that encodes all chunks and stores them with their source metadata in a vector store (e.g., FAISS or Chroma), and a `retrieve(query, k=4)` function that embeds the query and returns the top-k chunks with similarity scores and source attribution. *Verification:* I will run my 5 evaluation questions through `retrieve()` and check that the top chunks come from the expected source (e.g., Q1 → Squarespace source_09, not the Google notes) and contain the ground-truth information.
 
-**Milestone 5 — Generation and interface:**
+**Milestone 5 — Generation and interface:** I will use Claude. *Input:* my Grounded Generation requirements, the retrieval function from Milestone 4, and my 5 evaluation questions. *Expected output:* a `generate_answer(query)` function that retrieves top-k chunks, formats them into a grounded prompt with a system instruction to answer only from the provided context and cite sources (and say it doesn't know when the context is insufficient), calls the LLM, and returns the answer with source citations — plus a simple CLI or notebook interface to ask questions. *Verification:* I will run all 5 evaluation questions, compare the responses against my ground-truth answers, confirm citations point to the correct source, and test an out-of-domain question to make sure the system declines rather than hallucinating.

@@ -64,6 +64,29 @@ I chose this domain because international students often struggle to find career
 
 ---
 
+## Sample Chunks
+
+<!-- At least 5 labeled sample chunks, each with its source document name. -->
+
+Five representative chunks from `data/processed/chunks.jsonl` (snippets shown; each is a full ~300-word chunk):
+
+**1. `source_06_chunk_001` — source: How to Add Projects to Your Resume (And Actually Get Credit for Them)**
+> "...You want the projects you list on your resume, whether they're an app, scripts that automate something, analyses, or dashboards (Tableau, Power BI, Jupyter notebooks), or machine learning models, to have shareable output..."
+
+**2. `source_09_chunk_006` — source: Squarespace Acing Technical Recruitment Info Session**
+> "...Everyone talks about LeetCode and how to use it for prepping. But beyond practicing problems, what were your most effective strategies for preparing for technical interviews?..." (continues with advice on data-structures coursework, thinking out loud, mock interviews, and comparing brute-force to optimized solutions)
+
+**3. `source_07_chunk_002` — source: Building Confidence: Empower Yourself as a Woman in Tech**
+> "...make and keep promises to yourself - tell yourself, 'I am becoming someone who trusts myself.' Develop this skill by setting and maintaining relevant boundaries... Resilience: be willing to bounce back from whatever challenges and setbacks you have..."
+
+**4. `source_01_chunk_000` — source: How I Survived the Toughest Job Market as an International Student**
+> "I landed a full-time job and got 2 internships before graduating in May. That's the result of 2,300+ applications for both internship and full-time positions. As an international student I can't tell how many rejections were because of sponsorship or my qualifications..."
+
+**5. `source_05_chunk_002` — source: No Internship? No Problem**
+> "HOW TO START: Look for 'good first issue' tags on GitHub; start with documentation improvements; fix small bugs to build confidence. CV LINE EXAMPLE: 'Contributed 12 pull requests to XYZ open-source library, improving performance by 15%.' THE FORMULA: Contributions + Library + Measurable Impact..."
+
+---
+
 ## Embedding Model
 
 <!-- Name the embedding model you used and explain your choice.
@@ -75,6 +98,47 @@ I chose this domain because international students often struggle to find career
 **Model used:** `bge-small-en-v1.5` via sentence-transformers. I chose it over `all-MiniLM-L6-v2` because MiniLM truncates inputs at 256 tokens, which would silently cut off my ~300-word chunks, whereas bge-small-en-v1.5 supports up to 512 tokens — matching my chunk size — while remaining small, fast, and free to run locally. Both are English-only, which fits my corpus since all 13 sources are in English. Retrieval uses top-k = 4 by cosine similarity, and queries are prefixed with BGE's recommended "Represent this sentence for searching relevant passages:" instruction.
 
 **Production tradeoff reflection:** If I were deploying this for real users and cost were not a constraint, I would evaluate stronger models such as `bge-large-en-v1.5` for better English retrieval accuracy, or API-hosted models like OpenAI `text-embedding-3-large` and Cohere `embed-v3` for higher accuracy and longer context. Because my users are international students who may search in their first language, I would also consider a multilingual model such as `paraphrase-multilingual-MiniLM-L12-v2`, even though my current sources are all English. For nuanced career advice where the same idea is phrased many different ways, I would likely add a cross-encoder re-ranker (e.g., Cohere Rerank) on top of the initial retrieval. The tradeoffs are increased latency, infrastructure complexity, per-call cost, and sending data off-device, in exchange for more accurate retrieval.
+
+---
+
+## Retrieval Test Results
+
+<!-- At least 3 queries, each showing the query and top returned chunks; for >=2, explain relevance. -->
+
+Run `python -m src.retrieve` to reproduce. Distances are cosine distance (lower = more similar).
+
+**Query 1: "What advice did a Squarespace recruiter give students without prior SWE internships applying for new grad roles?"**
+
+| Rank | Distance | Source | Chunk |
+|---|---|---|---|
+| 1 | 0.277 | source_09 | chunk 20 — "...what helps new grad candidates stand out..." |
+| 2 | 0.279 | source_09 | chunk 21 — "...our interview process looks like here at Squarespace..." |
+| 3 | 0.294 | source_09 | chunk 13 — "...working with someone not knowing everything, but asking the right questions..." |
+| 4 | 0.300 | source_09 | chunk 4 — "...how did you first start preparing..." |
+
+*Why these are relevant:* All four top hits come from **source_09 — the Squarespace info session itself**, which is exactly the document the question targets, and all distances are low (≈0.28–0.30). The chunks cover what makes new-grad candidates stand out and how the Squarespace process works — directly on-topic for advice to students without internships.
+
+**Query 2: "What resume formula was recommended for writing project bullet points?"**
+
+| Rank | Distance | Source | Chunk |
+|---|---|---|---|
+| 1 | 0.287 | source_06 | chunk 1 — "...projects you list on your resume...shareable output..." |
+| 2 | 0.320 | source_06 | chunk 2 — "...for Y. I used X tech, and this was my result..." |
+| 3 | 0.325 | source_06 | chunk 0 — "How to Add Projects to Your Resume..." |
+| 4 | 0.329 | source_05 | chunk 2 — "...THE FORMULA: Contributions + Library + Measurable Impact..." |
+
+*Why these are relevant:* The top three hits are from **source_06**, the article specifically about adding projects to a resume, which contains the "[Action verb] + [What you did] + [Tech used] + [Measurable result]" formula. The fourth hit (source_05) independently states a closely related bullet-point formula, so even the lowest-ranked chunk is on-topic.
+
+**Query 3: "What are common reasons international students are rejected from internships?"**
+
+| Rank | Distance | Source | Chunk |
+|---|---|---|---|
+| 1 | 0.258 | source_01 | chunk 0 — "...can't tell how many rejections were because of sponsorship or my qualifications..." |
+| 2 | 0.305 | source_01 | chunk 1 — resume/application volume details |
+| 3 | 0.308 | source_02 | chunk 1 — "...best way to get accurate info is to ask the recruiter..." |
+| 4 | 0.318 | source_02 | chunk 0 — F-1/OPT/CPT/H-1B advice intro |
+
+Top hits come from the two international-student experience posts (source_01, source_02), with the best match explicitly naming sponsorship and qualifications as rejection factors.
 
 ---
 
@@ -92,6 +156,61 @@ I chose this domain because international students often struggle to find career
 Beyond the prompt, grounding is enforced *structurally* by a **relevance gate**: before calling the LLM, the system drops any retrieved chunk whose cosine distance exceeds 0.65, and if no chunk qualifies it returns the decline message **without calling the model at all**. This means an out-of-domain question (e.g. "What is the best recipe for chocolate chip cookies?") cannot be answered from the model's training knowledge — it is declined before generation.
 
 **How source attribution is surfaced in the response:** Attribution is guaranteed **programmatically**, not left to the model. After generation, the system collects the source metadata (`source_id`, title, URL) of the chunks that were actually passed as context, de-duplicates them per document, and returns them as a separate `sources` list that the interface displays under "Retrieved from." The model is *also* asked to cite `[source_id]` inline, but the authoritative source list comes from the retrieval metadata, so attribution holds even if the model omits a citation. When the system declines (no relevant context), the source list is empty.
+
+---
+
+## Example Responses
+
+<!-- >=2 responses with source attribution visible in the output, plus 1 out-of-scope refusal. -->
+
+**Example 1 (in-scope, attribution visible):**
+> **Q:** What resume formula was recommended for writing project bullet points?
+> **A:** The recommended resume formula for writing project bullet points is: [Action verb] + [What you did] + [Tech used] + [Measurable result] **[source_06]**.
+> **Retrieved from:** source_06 — How to Add Projects to Your Resume; source_05 — No Internship? No Problem
+
+**Example 2 (in-scope, attribution visible):**
+> **Q:** What are common reasons international students are rejected from internships?
+> **A:** According to **[source_01]**, students who require sponsorship are always considered last. Additionally, **[source_02]** notes that hiring outside immigration lawyers to sponsor an H-1B costs money, making employers more likely to favor a U.S. citizen.
+> **Retrieved from:** source_01 — How I Survived the Toughest Job Market...; source_02 — Advice for International Students in the US
+
+**Example 3 (out-of-scope refusal):**
+> **Q:** What is the best recipe for chocolate chip cookies?
+> **A:** I don't have enough information on that.
+> **Retrieved from:** (none)
+
+This question is declined by the relevance gate before the LLM is even called, because no chunk is within the cosine-distance threshold — the system refuses rather than answering from general knowledge.
+
+---
+
+## Query Interface
+
+<!-- Description of input/output fields + a sample interaction transcript. -->
+
+The interface is a **Gradio web app** (`app.py`), launched with `python app.py` and opened at `http://localhost:7860`.
+
+**Input field:**
+- **"Your question"** — a single-line textbox. Submit by clicking the **Ask** button or pressing Enter. Clickable example questions are provided below the box.
+
+**Output fields:**
+- **"Answer"** — the grounded answer text, with inline `[source_id]` citations.
+- **"Retrieved from"** — the list of source documents (id, title, URL) the answer drew from; shows "(no sources...)" when the system declines.
+
+**Sample interaction transcript:**
+```
+Your question:  How can I build experience over the summer without an internship?
+
+Answer:         You can build experience over the summer without an internship by
+                following 9 practical ways: 1. building a project, 2. contributing to
+                open source, 3. freelance/micro work, 4. skill sprint, 5. hackathons,
+                6. research/teaching, 7. practicing technical skills, 8. building your
+                network, and 9. gaining career clarity [source_05]. You can also create
+                a personalized 8-week action plan and turn summer activities into strong
+                CV bullets [source_05].
+
+Retrieved from: • source_05 — No Internship? No Problem
+                • source_03 — I'm an international student at UNC. Here's how I got an
+                  AI summer internship.
+```
 
 ---
 

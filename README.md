@@ -289,3 +289,6 @@ Retrieved from: • source_05 — No Internship? No Problem
 - *What I gave the AI:* My planning.md Retrieval Approach section (`bge-small-en-v1.5`, top-k=4, BGE query prefix) and pipeline diagram, plus my grounding requirement (answer from retrieved context only, with programmatic source attribution).
 - *What it produced:* `src/embed.py` (embed chunks into ChromaDB with source metadata), `src/retrieve.py` (top-k retrieval with distances), `src/generate.py` (Groq-backed grounded answering), and a Gradio `app.py`.
 - *What I changed or overrode:* I directed it to make source attribution **programmatic** (built from retrieval metadata) rather than trusting the LLM to cite correctly, and to add a **relevance gate** that declines out-of-domain questions before the LLM is ever called — strengthening grounding beyond the prompt instruction alone.
+
+---
+[App Demo Link](https://www.loom.com/share/28ee95ed4e6949088f48fd92fa819d1d)
